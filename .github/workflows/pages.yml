@@ -32,6 +32,9 @@ jobs:
         env:
           SITE_BASE: ${{ steps.pages.outputs.base_url }}
         run: |
+          mkdir -p build
+          cp *.py build/
+          cd build
           python3 pages.py
           echo "Built against SITE_BASE=$SITE_BASE"
 
@@ -40,8 +43,14 @@ jobs:
           python3 - <<'EOF'
           import os, re, json, sys
           root = "site"
+          if not os.path.isdir(root):
+              print("FATAL: site/ was not created")
+              sys.exit(1)
           files = [os.path.join(r, n) for r, d, f in os.walk(root)
                    for n in f if n.endswith(".html")]
+          if len(files) < 20:
+              print(f"FATAL: expected 23 pages, found {len(files)}")
+              sys.exit(1)
           errors = []
           paths = {os.path.relpath(p, root) for p in files}
           for f in files:
