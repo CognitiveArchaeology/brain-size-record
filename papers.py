@@ -26,7 +26,7 @@ PAPERS = {
         "oa": "Gold open access",
         "dates": "Received 21 Mar 2023; accepted 29 May 2023; published 22 Jun 2023",
         "type": "Perspective",
-        "role": "Round 3 of the Holocene brain size exchange — the authors' response to Villmoare & Grabowski (2022).",
+        "role": "Round 3 of the Holocene brain size exchange, the authors' response to Villmoare & Grabowski (2022).",
         "abstract": (
             "Human brain reduction from the Late Pleistocene/Holocene to the modern day is a "
             "longstanding anthropological observation documented with numerous lines of independent "
@@ -50,7 +50,7 @@ PAPERS = {
             "Framed as effect size: human brain volume has decreased by roughly <strong>one standard deviation</strong> in the last 10,000 years, whether examined locally or globally.",
         ],
         "limitations": [
-            "The authors concede the Holocene portion of the original dataset is skewed toward modern specimens — an unavoidable taphonomic bias that may pull the change-point estimate too recent and could obscure earlier change points.",
+            "The authors concede the Holocene portion of the original dataset is skewed toward modern specimens, an unavoidable taphonomic bias that may pull the change-point estimate too recent and could obscure earlier change points.",
             "They acknowledge the historical brain-size literature is &ldquo;rife with problematic studies biased by racist and sexist objectives,&rdquo; and that measurement methods differ across investigators.",
             "The Morton Collection data were removed from this analysis; the authors note it &ldquo;has been used to promote false and dangerous ideas of white supremacy.&rdquo; Removing it had no appreciable effect on the modern estimate.",
             "Errata are disclosed: four juvenile Neanderthals and one duplicate entry were removed from the original dataset, and an uncited prior work (Henneberg 2004) is credited.",
@@ -94,16 +94,16 @@ PAPERS = {
         "findings": [
             "Sample: <strong>298 <em>Homo</em> specimens</strong>, 373 independent cranial capacity measurements, spanning the past 50,000 years.",
             "Brain size shows an inverse relationship with temperature (least-squares regression <em>r</em> = −0.362, <em>p</em> &lt; 0.0001), holding after controlling for geography, sex and taxon (ANCOVA, <em>p</em> &lt; 0.0001).",
-            "Specimens from cooler periods average <strong>1,426.31 g ± 137.30</strong> (n = 65) versus <strong>1,280.89 g ± 141.67</strong> (n = 233) in warmer periods — roughly a <strong>10.74% difference</strong> (<em>p</em> &lt; 0.0001).",
+            "Specimens from cooler periods average <strong>1,426.31 g ± 137.30</strong> (n = 65) versus <strong>1,280.89 g ± 141.67</strong> (n = 233) in warmer periods, roughly a <strong>10.74% difference</strong> (<em>p</em> &lt; 0.0001).",
             "By epoch: Pleistocene 1,426.96 g ± 139.28 (n = 63) versus Holocene 1,281.95 g ± 141.58 (n = 235), a <strong>10.71% difference</strong>.",
             "Restricted to anatomically modern <em>Homo</em> (n = 289), the cool-period advantage is <strong>11.02%</strong>.",
             "Humidity and precipitation are weaker predictors: 5.28% for humidity (<em>p</em> &lt; 0.002) and 2.74% for precipitation (non-significant, <em>p</em> = 0.061).",
-            "Covariate models explain roughly <strong>40–42%</strong> of variation — the paper is explicit that most variation remains unaccounted for.",
+            "Covariate models explain roughly <strong>40–42%</strong> of variation, the paper is explicit that most variation remains unaccounted for.",
         ],
         "limitations": [
             "The paper states plainly that its data &ldquo;can only provide correlational support for spatiotemporal relationships&rdquo; and that future work is needed to confirm responsiveness of brain size to climate.",
             "Causal direction is unresolved: the author notes it is unclear whether brain size was selected on directly, or drifted alongside body size under selection.",
-            "Sampling biases are disclosed — 220 of 298 specimens are high-latitude, and 167 of 257 sexed specimens are male.",
+            "Sampling biases are disclosed, 220 of 298 specimens are high-latitude, and 167 of 257 sexed specimens are male.",
             "Climate accounts for only a small share of total variation in brain size; the paper says brain size adaptations &ldquo;are likely driven by other factors.&rdquo;",
             "The paper notes in its own Results that the climate and brain size records &ldquo;do not appear to correspond temporally,&rdquo; and that the linear relationship is confounded by differences across time series and cubic trends.",
             "No significant differences appear at temperature extremes (all <em>p</em> &gt; 0.50), only across moderate ranges.",
@@ -146,7 +146,7 @@ PAPERS = {
             "temporal climate differences."),
         "findings": [
             "Sample: <strong>247 <em>Homo</em> specimens</strong> across 700,000 years, against five independent paleoclimate records.",
-            "Body mass in cooler periods averages <strong>66.40 kg ± 0.86</strong> versus <strong>59.00 kg ± 0.73</strong> in warmer periods — a <strong>11.8% difference</strong>.",
+            "Body mass in cooler periods averages <strong>66.40 kg ± 0.86</strong> versus <strong>59.00 kg ± 0.73</strong> in warmer periods, a <strong>11.8% difference</strong>.",
             "Roughly <strong>half</strong> of total body mass variation is accounted for by the model (<em>r</em>² = 0.51 for <em>Homo</em>; 0.53 for anatomically modern humans, both <em>p</em> &lt; 0.0001).",
             "Body <em>shape</em> also shifts: stature-to-body-mass ratio is 7.09% greater in warmer cycles (<em>p</em> &lt; 0.01), rising to 9.89% at 10,000-year averaging.",
             "Stature alone shows <strong>no</strong> significant difference across temperature cycles (<em>p</em> = 0.07) — climate affects mass and proportion, not height.",
@@ -157,7 +157,7 @@ PAPERS = {
             "The proportionality sample is small (87 specimens) and biased toward high-latitude (82 of 87) males (41 of 73 sexed specimens).",
             "Testing proportionality is &ldquo;approximate at best&rdquo; — each metric used has known weaknesses, and results using the Ponderal Index were <em>not</em> significant.",
             "The author notes the proportionality effect may be an artifact of the strong body-mass effect rather than an independent shape response.",
-            "Effects disappear at temperature extremes (<em>p</em> &gt; 0.09), and tail effects may reflect outliers — two Late Pleistocene East Asian groups and five Neanderthals.",
+            "Effects disappear at temperature extremes (<em>p</em> &gt; 0.09), and tail effects may reflect outliers, two Late Pleistocene East Asian groups and five Neanderthals.",
             "Alternative drivers are acknowledged: precipitation, humidity, extreme weather, vegetation, water availability, or non-climate factors such as culture and technology.",
         ],
     },
@@ -179,7 +179,7 @@ PAPERS = {
         "dates": ("Received 24 Jan 2021; accepted 28 Aug 2021; published online 29 Oct 2021; "
                   "citation block dates the issue 6 December 2021"),
         "type": "Original research",
-        "role": "Asks whether brain size decline is proportional to body size decline — and finds most of it is.",
+        "role": "Asks whether brain size decline is proportional to body size decline, and finds most of it is.",
         "abstract": (
             "Growth in human brain size and encephalization is well documented throughout much of "
             "prehistory and believed to be responsible for increasing cognitive faculties. Over the "
@@ -228,7 +228,7 @@ PAPERS = {
         "open_copy_label": "Zenodo (author deposit, CC BY 4.0)",
         "dates": "Received 25 Oct 2024; revised and accepted 3 Jul 2025; online 15 Jul 2025; issue 1 Aug 2025",
         "type": "Original research (special issue: environmental effects on brain and cognition)",
-        "role": "Reframes the question — not why brains shrank recently, but why they stopped growing ~300,000 years ago.",
+        "role": "Reframes the question, not why brains shrank recently, but why they stopped growing ~300,000 years ago.",
         "abstract": (
             "Increasing brain size is a hallmark of human evolution. While a larger brain offers "
             "evolutionary advantages driven by social and cognitive adaptations, it also imposes "
@@ -253,7 +253,7 @@ PAPERS = {
             "Glacial–interglacial differences appear <strong>only in the last 100,000 years</strong> (<em>p</em> &lt; 0.0001); there is no such difference between 100–300 kyr BP (<em>p</em> = 0.923).",
             "Factorial ANOVA finds significant effects of time (<em>F</em> = 208.22), climate stage (<em>F</em> = 44.73), and their interaction (<em>F</em> = 5.17), all <em>p</em> &lt; 0.0001.",
             "The energetic case: brains account for roughly <strong>20% of adult resting energy consumption and up to 60% in early development</strong>.",
-            "The offloading chronology: symbolic objects appear 100,000–150,000 years ago — Bizmoune Cave shell beads (~142–100 kya), Blombos Cave engraved ochre (~100–75 kya), Diepkloof ostrich eggshell (~65 kya), systematic notation (~50 kya).",
+            "The offloading chronology: symbolic objects appear 100,000–150,000 years ago, Bizmoune Cave shell beads (~142–100 kya), Blombos Cave engraved ochre (~100–75 kya), Diepkloof ostrich eggshell (~65 kya), systematic notation (~50 kya).",
             "Interpretation offered: directional selection for expansion gave way to <strong>stabilizing selection</strong>, with cognitive tools relieving pressure for further encephalization.",
         ],
         "limitations": [
@@ -285,7 +285,7 @@ PAPERS = {
         "license": "CC BY 4.0", "license_url": "https://creativecommons.org/licenses/by/4.0/",
         "oa": "Gold open access",
         "type": "Original research",
-        "role": "Round 1. The paper that started the modern exchange — change-point analysis placing a reduction at ~3,000 BP, with an analogy to eusocial insect colonies.",
+        "role": "Round 1. The paper that started the modern exchange, change-point analysis placing a reduction at ~3,000 BP, with an analogy to eusocial insect colonies.",
         "lim_heading": "Subsequent response",
         "abstract": "",
         "findings": [
@@ -344,7 +344,7 @@ PAPERS = {
         "oa": "Gold open access",
         "dates": "Published 11 April 2024",
         "type": "Commentary",
-        "role": "Round 4. A published commentary responding to the 2023 paper — the most recent entry in the exchange.",
+        "role": "Round 4. A published commentary responding to the 2023 paper, the most recent entry in the exchange.",
         "abstract": "",
         "findings": [],
         "limitations": [],
@@ -361,9 +361,9 @@ PAPERS = {
         "doi": "",
         "url": "https://arxiv.org/abs/1102.5604",
         "license": "arXiv licence", "license_url": "",
-        "oa": "Freely available preprint",
-        "type": "Preprint",
-        "role": "Independent prior work arguing for Holocene selection toward smaller brains — predates the current exchange and is cited by both sides.",
+        "oa": "Freely available preprint. Not peer reviewed.",
+        "type": "Preprint (not peer reviewed)",
+        "role": "An unrefereed preprint arguing for Holocene selection toward smaller brains. Cited by both sides of the current dispute, but it was never published in a peer-reviewed venue and is listed here with that caveat.",
         "abstract": "",
         "findings": [],
         "limitations": [],
@@ -405,7 +405,7 @@ PAPERS = {
         "abstract": "",
         "findings": [
             "Temperature is a major predictor of body size variation in <em>Homo</em> over the past million years.",
-            "Environmental predictors of <strong>brain</strong> size are weaker and differ from those for body size — the authors find brain size better predicted by non-climatic factors.",
+            "Environmental predictors of <strong>brain</strong> size are weaker and differ from those for body size, the authors find brain size better predicted by non-climatic factors.",
         ],
         "limitations": [],
     },
@@ -441,3 +441,250 @@ def citation(p):
     if p.get("doi"):
         bits.append(f'DOI: <a href="https://doi.org/{p["doi"]}">{p["doi"]}</a>')
     return " ".join(bits)
+
+
+# ---------------------------------------------------------------------------
+# Wider literature. Verified against Crossref/OpenAlex/PubMed on 2026-08-16.
+# These are cited inline throughout the site so that no page rests on a single
+# study. Peer-reviewed only; preprints are excluded.
+# ---------------------------------------------------------------------------
+
+LIT = {
+ # --- Holocene and recent cranial change -----------------------------------
+ "henneberg1988": ("Henneberg, M. (1988). Decrease of human skull size in the Holocene. "
+   "<em>Human Biology</em> 60(3), 395&ndash;405.", None,
+   "The observation that anchors the whole discussion. An erratum was published the following year "
+   "(<em>Hum Biol</em> 61(3):478); corrected values should be used."),
+ "hennebergsteyn1993": ("Henneberg, M. &amp; Steyn, M. (1993). Trends in cranial capacity and cranial "
+   "index in Subsaharan Africa during the Holocene. <em>American Journal of Human Biology</em> 5(4), "
+   "473&ndash;479.", "10.1002/ajhb.1310050411",
+   "Tests whether the Holocene decrease is global rather than European. Finds it in a sub-Saharan series."),
+ "henneberg1998": ("Henneberg, M. (1998). Evolution of the human brain: is bigger better? "
+   "<em>Clinical and Experimental Pharmacology and Physiology</em> 25(9), 745&ndash;749.",
+   "10.1111/j.1440-1681.1998.tb02289.x",
+   "The researcher who documented the decrease argues it carries no implication for cognitive capacity."),
+ "beals1984": ("Beals, K.L., Smith, C.L. &amp; Dodd, S.M. (1984). Brain size, cranial morphology, "
+   "climate, and time machines. <em>Current Anthropology</em> 25(3), 301&ndash;330.", "10.1086/203138",
+   "The classic dataset relating cranial capacity to climate across populations. Published with "
+   "commentary and reply, so the main objections sit alongside it in the record."),
+ "miller1977": ("Miller, A.K.H. &amp; Corsellis, J.A.N. (1977). Evidence for a secular increase in "
+   "human brain weight during the past century. <em>Annals of Human Biology</em> 4(3), 253&ndash;257.",
+   "10.1080/03014467700007142",
+   "Autopsy series showing brain weight rising across the twentieth century. A secular trend within "
+   "living populations, on a timescale too short to be evolutionary."),
+ "decarli2024": ("DeCarli, C., Maillard, P., Pase, M.P., Beiser, A.S., Kojis, D., Satizabal, C.L., "
+   "Himali, J.J., Aparicio, H.J., Fletcher, E. &amp; Seshadri, S. (2024). Trends in intracranial and "
+   "cerebral volumes of Framingham Heart Study participants born 1930 to 1970. "
+   "<em>JAMA Neurology</em> 81(5), 471.", "10.1001/jamaneurol.2024.0469",
+   "MRI across four birth decades finds intracranial and cerebral volumes increasing. Forty years "
+   "spans roughly one and a half generations, so this measures growth conditions rather than "
+   "selection."),
+ "jantz2016": ("Jantz, R.L. &amp; Jantz, L.M. (2016). The remarkable change in Euro-American cranial "
+   "shape and size. <em>Human Biology</em> 88(1), 56.", "10.13110/humanbiology.88.1.0056",
+   "Substantial cranial change across roughly 150 years, far too fast for natural selection. Points "
+   "to plasticity rather than evolutionary change in recent samples."),
+
+ # --- Climate, latitude, body size -----------------------------------------
+ "ruff1994": ("Ruff, C.B. (1994). Morphological adaptation to climate in modern and fossil hominids. "
+   "<em>American Journal of Physical Anthropology</em> 37(S19), 65&ndash;107.", "10.1002/ajpa.1330370605",
+   "The standard review of body form and climate in humans. Body breadth, not stature, is the "
+   "climatically constrained dimension."),
+ "ruff1997": ("Ruff, C.B., Trinkaus, E. &amp; Holliday, T.W. (1997). Body mass and encephalization in "
+   "Pleistocene <em>Homo</em>. <em>Nature</em> 387(6629), 173&ndash;176.", "10.1038/387173a0",
+   "Endocranial trends cannot be read without a matched body mass series, because body size changed too. "
+   "The standard methodological objection to any brain size claim."),
+ "katzmarzyk1998": ("Katzmarzyk, P.T. &amp; Leonard, W.R. (1998). Climatic influences on human body "
+   "size and proportions. <em>American Journal of Physical Anthropology</em> 106(4), 483&ndash;503.",
+   "10.1002/(SICI)1096-8644(199808)106:4<483::AID-AJPA4>3.0.CO;2-K",
+   "Restudy of the classic climate-body size relationship across 418 samples. The slopes are shallower "
+   "than in 1953, which the authors attribute to twentieth-century nutritional change."),
+ "foster2013": ("Foster, F. &amp; Collard, M. (2013). A reassessment of Bergmann's rule in modern humans. "
+   "<em>PLoS ONE</em> 8(8), e72269.", "10.1371/journal.pone.0072269",
+   "Bergmann's rule holds in humans only across very wide latitude or temperature ranges. Earlier "
+   "support came from hemisphere-biased samples."),
+ "savell2016": ("Savell, K.R.R., Auerbach, B.M. &amp; Roseman, C.C. (2016). Constraint, natural "
+   "selection, and the evolution of human body form. <em>PNAS</em> 113(34), 9492&ndash;9497.",
+   "10.1073/pnas.1603632113",
+   "Quantitative genetic modelling finds some limb clines are correlated side effects rather than "
+   "adaptations. Group mean differences are poor evidence of adaptation."),
+ "wells2012": ("Wells, J.C.K. (2012). Ecogeographical associations between climate and human body "
+   "composition. <em>American Journal of Physical Anthropology</em> 147(2), 169&ndash;186.",
+   "10.1002/ajpa.21591",
+   "Across 137 non-industrialised populations the climate signal may run through fat rather than lean "
+   "mass. Polynesian populations run counter to every trend."),
+
+ # --- Energetics ------------------------------------------------------------
+ "aiello1995": ("Aiello, L.C. &amp; Wheeler, P. (1995). The expensive-tissue hypothesis. "
+   "<em>Current Anthropology</em> 36(2), 199&ndash;221.", "10.1086/204350",
+   "Proposed that brain expansion was paid for by a reduced gut. The origin of the metabolic framing."),
+ "navarrete2011": ("Navarrete, A., van Schaik, C.P. &amp; Isler, K. (2011). Energetics and the evolution "
+   "of human brain size. <em>Nature</em> 480(7375), 91&ndash;93.", "10.1038/nature10629",
+   "Across a large mammal sample, relative brain size and relative gut size do not trade off once fat "
+   "is accounted for. Contradicts the expensive tissue hypothesis directly."),
+ "fonseca2012": ("Fonseca-Azevedo, K. &amp; Herculano-Houzel, S. (2012). Metabolic constraint imposes "
+   "tradeoff between body size and number of brain neurons in human evolution. <em>PNAS</em> 109(45), "
+   "18571&ndash;18576.", "10.1073/pnas.1206390109",
+   "Sets a feeding-time ceiling on how many neurons a primate can support at a given body size."),
+ "kuzawa2014": ("Kuzawa, C.W., Chugani, H.T., Grossman, L.I., et al. (2014). Metabolic costs and "
+   "evolutionary implications of human brain development. <em>PNAS</em> 111(36), 13010&ndash;13015.",
+   "10.1073/pnas.1323099111",
+   "Brain glucose use peaks in childhood at 66.3% of resting metabolic rate in males and 65.0% in "
+   "females, and body growth slows as brain demand rises."),
+ "pontzer2016": ("Pontzer, H., Brown, M.H., Raichlen, D.A., et al. (2016). Metabolic acceleration and "
+   "the evolution of human brain size and life history. <em>Nature</em> 533(7603), 390&ndash;392.",
+   "10.1038/nature17654",
+   "Humans expanded the total energy budget rather than only reallocating within a fixed one, which "
+   "complicates pure trade-off accounts."),
+ "isler2009": ("Isler, K. &amp; van Schaik, C.P. (2009). The expensive brain: a framework for explaining "
+   "evolutionary changes in brain size. <em>Journal of Human Evolution</em> 57(4), 392&ndash;400.",
+   "10.1016/j.jhevol.2009.04.009",
+   "Brain size is limited jointly by stable energy supply and by allocation away from growth and "
+   "reproduction."),
+
+ # --- Brain size and cognition ---------------------------------------------
+ "pietschnig2015": ("Pietschnig, J., Penke, L., Wicherts, J.M., Zeiler, M. &amp; Voracek, M. (2015). "
+   "Meta-analysis of associations between human brain volume and intelligence differences. "
+   "<em>Neuroscience &amp; Biobehavioral Reviews</em> 57, 411&ndash;432.", "10.1016/j.neubiorev.2015.09.017",
+   "88 studies, over 8,000 individuals, pooled r = .24. The authors conclude brain size is not an "
+   "isomorphic proxy for intelligence."),
+ "gignac2017": ("Gignac, G.E. &amp; Bates, T.C. (2017). Brain volume and intelligence: the moderating "
+   "role of intelligence measurement quality. <em>Intelligence</em> 64, 18&ndash;29.",
+   "10.1016/j.intell.2017.06.004",
+   "Reanalysing the same data restricted to healthy adults with better IQ measures gives r near .40, "
+   "with no evidence of publication bias. Directly contests the lower figure."),
+ "nave2019": ("Nave, G., Jung, W.H., Karlsson Linn&eacute;r, R., Kable, J.W. &amp; Koellinger, P.D. "
+   "(2019). Are bigger brains smarter? <em>Psychological Science</em> 30(1), 43&ndash;54.",
+   "10.1177/0956797618808470",
+   "Preregistered UK Biobank study, n = 13,608. Brain volume and fluid intelligence correlate at "
+   "r = .19, around 2% of variance."),
+ "logan2018": ("Logan, C.J., Avin, S., Boogert, N., et al. (2018). Beyond brain size. "
+   "<em>Comparative Cognition &amp; Behavior Reviews</em> 13, 55&ndash;89.", "10.3819/ccbr.2018.130008",
+   "Gross volume conflates independently evolving components. Organisation, connectivity and neuron "
+   "density carry the explanatory weight."),
+ "smaers2021": ("Smaers, J.B., Rothman, R.S., Hudson, D.R., et al. (2021). The evolution of mammalian "
+   "brain size. <em>Science Advances</em> 7(18), eabe2101.", "10.1126/sciadv.abe2101",
+   "Across roughly 1,400 mammals, brain-body scaling slopes differ by clade and over time, so a single "
+   "encephalization formula is not comparable across lineages."),
+ "deaner2007": ("Deaner, R.O., Isler, K., Burkart, J. &amp; van Schaik, C. (2007). Overall brain size, "
+   "and not encephalization quotient, best predicts cognitive ability across non-human primates. "
+   "<em>Brain, Behavior and Evolution</em> 70(2), 115&ndash;124.", "10.1159/000102973",
+   "Undercuts encephalization quotient as the standard comparative measure."),
+ "trahan2014": ("Trahan, L.H., Stuebing, K.K., Fletcher, J.M. &amp; Hiscock, M. (2014). The Flynn effect: "
+   "a meta-analysis. <em>Psychological Bulletin</em> 140(5), 1332&ndash;1360.", "10.1037/a0037173",
+   "285 studies covering 1951 to 2010. Gains of roughly 2.9 to 3 IQ points per decade."),
+ "bratsberg2018": ("Bratsberg, B. &amp; Rogeberg, O. (2018). Flynn effect and its reversal are both "
+   "environmentally caused. <em>PNAS</em> 115(26), 6674&ndash;6678.", "10.1073/pnas.1718793115",
+   "Norwegian conscript data recover the rise, the turning point and the decline entirely from "
+   "within-family variation, leaving no room for a biological explanation."),
+ "herculano2009": ("Herculano-Houzel, S. (2009). The human brain in numbers. "
+   "<em>Frontiers in Human Neuroscience</em> 3, 31.", "10.3389/neuro.09.031.2009",
+   "Counts rather than estimates the cells in the human brain, and finds it a linearly scaled-up "
+   "primate brain."),
+
+ # --- Offloading and distributed cognition ---------------------------------
+ "risko2016": ("Risko, E.F. &amp; Gilbert, S.J. (2016). Cognitive offloading. "
+   "<em>Trends in Cognitive Sciences</em> 20(9), 676&ndash;688.", "10.1016/j.tics.2016.07.002",
+   "The defining review. Treats offloading as adaptive strategy selection rather than decline."),
+ "sparrow2011": ("Sparrow, B., Liu, J. &amp; Wegner, D.M. (2011). Google effects on memory. "
+   "<em>Science</em> 333(6043), 776&ndash;778.", "10.1126/science.1207745",
+   "The most-cited experimental basis for the claim that search engines change memory."),
+ "hesselmann2020": ("Hesselmann, G. (2020). No conclusive evidence that difficult general knowledge "
+   "questions cause a Google Stroop effect. <em>PeerJ</em> 8, e10325.", "10.7717/peerj.10325",
+   "Preregistered direct replication of Sparrow et al. The effect did not replicate."),
+ "ward2017": ("Ward, A.F., Duke, K., Gneezy, A. &amp; Bos, M.W. (2017). Brain drain. "
+   "<em>Journal of the Association for Consumer Research</em> 2(2), 140&ndash;154.", "10.1086/691462",
+   "Reported that a nearby smartphone reduces available working memory."),
+ "ruizpardo2022": ("Ruiz Pardo, A.C. &amp; Minda, J.P. (2022). Reexamining the brain drain effect. "
+   "<em>Acta Psychologica</em> 230, 103717.", "10.1016/j.actpsy.2022.103717",
+   "Preregistered replication across six conditions. No effect found."),
+ "parry2023": ("Parry, D.A. (2023). Does the mere presence of a smartphone impact cognitive performance? "
+   "<em>Media Psychology</em> 27(5), 737&ndash;762.", "10.1080/15213269.2023.2286647",
+   "Meta-analysis finding null effects for most cognitive functions."),
+ "bottger2023": ("B&ouml;ttger, T., Poschik, M. &amp; Zierer, K. (2023). Does the brain drain effect "
+   "really exist? A meta-analysis. <em>Behavioral Sciences</em> 13(9), 751.", "10.3390/bs13090751",
+   "Meta-analysis of the same literature reaching the opposite conclusion to Parry."),
+ "grinschgl2021": ("Grinschgl, S., Papenmeier, F. &amp; Meyerhoff, H.S. (2021). Consequences of "
+   "cognitive offloading. <em>Quarterly Journal of Experimental Psychology</em> 74(9), 1477&ndash;1496.",
+   "10.1177/17470218211008060",
+   "Offloading improves immediate performance and worsens later memory for the offloaded content. "
+   "Reallocation rather than loss."),
+ "storm2015": ("Storm, B.C. &amp; Stone, S.M. (2015). Saving-enhanced memory. "
+   "<em>Psychological Science</em> 26(2), 182&ndash;188.", "10.1177/0956797614559285",
+   "Saving one file before studying another improves memory for the second."),
+ "muthukrishna2016": ("Muthukrishna, M. &amp; Henrich, J. (2016). Innovation in the collective brain. "
+   "<em>Philosophical Transactions of the Royal Society B</em> 371(1690), 20150192.",
+   "10.1098/rstb.2015.0192",
+   "Innovation rate depends on population size, connectedness and transmission fidelity rather than "
+   "individual intelligence."),
+ "clark1998": ("Clark, A. &amp; Chalmers, D.J. (1998). The extended mind. <em>Analysis</em> 58(1), "
+   "7&ndash;19.", "10.1093/analys/58.1.7",
+   "The philosophical claim that cognitive processes can extend into the environment."),
+ "sterelny2010": ("Sterelny, K. (2010). Minds: extended or scaffolded? "
+   "<em>Phenomenology and the Cognitive Sciences</em> 9(4), 465&ndash;481.", "10.1007/s11097-010-9174-y",
+   "Argues scaffolding explains the same evidence without the metaphysical commitments of extension."),
+ "malafouris2019": ("Malafouris, L. (2019). Mind and material engagement. "
+   "<em>Phenomenology and the Cognitive Sciences</em> 18(1), 1&ndash;17.", "10.1007/s11097-018-9606-7",
+   "Material engagement theory: things participate in cognition rather than merely recording it."),
+
+ # --- Self-domestication and gracilization ---------------------------------
+ "cieri2014": ("Cieri, R.L., Churchill, S.E., Franciscus, R.G., Tan, J. &amp; Hare, B. (2014). "
+   "Craniofacial feminization, social tolerance, and the origins of behavioral modernity. "
+   "<em>Current Anthropology</em> 55(4), 419&ndash;443.", "10.1086/677209",
+   "Documents brow ridge reduction and facial shortening from the Middle Pleistocene onward, and links "
+   "it to selection for social tolerance."),
+ "hare2017": ("Hare, B. (2017). Survival of the friendliest. <em>Annual Review of Psychology</em> 68(1), "
+   "155&ndash;186.", "10.1146/annurev-psych-010416-044201",
+   "The self-domestication case: selection for prosociality produces a suite of traits including "
+   "reduced skeletal robusticity."),
+ "wilkins2014": ("Wilkins, A.S., Wrangham, R.W. &amp; Fitch, W.T. (2014). The domestication syndrome in "
+   "mammals. <em>Genetics</em> 197(3), 795&ndash;808.", "10.1534/genetics.114.165423",
+   "Proposes mild neural crest deficits as the developmental route from selection for tameness to "
+   "smaller brains and shorter faces."),
+ "kruska2005": ("Kruska, D.C.T. (2005). On the evolutionary significance of encephalization in some "
+   "eutherian mammals. <em>Brain, Behavior and Evolution</em> 65(2), 73&ndash;108.", "10.1159/000082979",
+   "Domesticated mammals show brain size reductions of roughly 8 to 30 per cent, and returning them to "
+   "the wild does not restore it."),
+ "sanchez2019": ("S&aacute;nchez-Villagra, M.R. &amp; van Schaik, C.P. (2019). Evaluating the "
+   "self-domestication hypothesis of human evolution. <em>Evolutionary Anthropology</em> 28(3), "
+   "133&ndash;143.", "10.1002/evan.21777",
+   "Concludes the evidence that humans show the domestication trait set is weaker and more equivocal "
+   "than the popular framing suggests."),
+ "leach2003": ("Leach, H.M. (2003). Human domestication reconsidered. <em>Current Anthropology</em> "
+   "44(3), 349&ndash;368.", "10.1086/368119",
+   "Offers an alternative route to gracilization through the shared dietary and activity changes of "
+   "sedentism, without invoking self-domestication."),
+
+ # --- Archaic and Neanderthal comparisons ----------------------------------
+ "neubauer2018": ("Neubauer, S., Hublin, J.-J. &amp; Gunz, P. (2018). The evolution of modern human "
+   "brain shape. <em>Science Advances</em> 4(1), eaao5961.", "10.1126/sciadv.aao5961",
+   "Endocranial volume was already within the modern range in the earliest <em>H. sapiens</em> around "
+   "300,000 years ago. What changed afterwards was shape, not size."),
+ "poncedeleon2021": ("Ponce de Le&oacute;n, M.S., Bienvenu, T., Marom, A., et al. (2021). The primitive "
+   "brain of early <em>Homo</em>. <em>Science</em> 372(6538), 165&ndash;171.", "10.1126/science.aaz0032",
+   "Separates brain reorganisation from brain enlargement. Ape-like frontal organisation persisted well "
+   "after the genus originated."),
+ "du2018": ("Du, A., Zipkin, A.M., Hatala, K.G., et al. (2018). Pattern and process in hominin brain size "
+   "evolution are scale-dependent. <em>Proceedings of the Royal Society B</em> 285(1873), 20172738.",
+   "10.1098/rspb.2017.2738",
+   "Conclusions about when and how fast brains grew depend substantially on how the data are binned."),
+ "pearce2013": ("Pearce, E., Stringer, C. &amp; Dunbar, R.I.M. (2013). New insights into differences in "
+   "brain organization between Neanderthals and anatomically modern humans. "
+   "<em>Proceedings of the Royal Society B</em> 280(1758), 20130168.", "10.1098/rspb.2013.0168",
+   "Argues more of the larger Neanderthal brain was given over to vision and body control, so equal "
+   "volume need not mean equal general cognition."),
+ "monson2026": ("Monson, T.A., Weitz, A.P. &amp; Brasil, M.F. (2026). The evolution of brain and body "
+   "size in genus <em>Homo</em>. <em>Humans</em> 6(2), 12.", "10.3390/humans6020012",
+   "Finds <em>Homo</em> brain-body scaling positively allometric and distinct from the wider primate "
+   "slope, with <em>H. floresiensis</em> and <em>H. naledi</em> falling where their body size predicts."),
+}
+
+
+def lit(key, note=False):
+    """Render a wider-literature citation."""
+    c, doi, n = LIT[key]
+    out = c
+    if doi:
+        out += f' <a href="https://doi.org/{doi}">doi:{doi}</a>'
+    if note:
+        out += f" {n}"
+    return out

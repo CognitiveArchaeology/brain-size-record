@@ -29,10 +29,10 @@ NAV = [
     ("body-size.html", "Body size"),
     ("cognition.html", "Cognition"),
     ("cognitive-offloading.html", "Offloading"),
-    ("papers.html", "Papers"),
+    ("self-domestication.html", "Domestication"),
+    ("papers.html", "Sources"),
     ("questions.html", "Questions"),
     ("glossary.html", "Glossary"),
-    ("sources.html", "Sources"),
     ("about.html", "About"),
 ]
 
@@ -108,6 +108,9 @@ footer.site .wrap p{margin-bottom:9px}
 font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:14.5px}
 .toc ul{margin:0;padding-left:19px}
 .toc li{margin-bottom:5px}
+ul.lit{font-size:14.5px;line-height:1.5;color:#3a4048}
+ul.lit li{margin-bottom:10px}
+h3+ul.lit{margin-top:10px}
 .upd{color:var(--mute);font-size:13.5px;font-family:-apple-system,BlinkMacSystemFont,sans-serif;
 margin-bottom:22px}
 @media(max-width:640px){body{font-size:16px}h1{font-size:26px}h2{font-size:20px}
