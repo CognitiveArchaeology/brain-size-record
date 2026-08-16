@@ -1,0 +1,87 @@
+name: Build and deploy site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Build site
+        env:
+          SITE_BASE: ${{ steps.pages.outputs.base_url }}
+        run: |
+          python3 pages.py
+          echo "Built against SITE_BASE=$SITE_BASE"
+
+      - name: Verify build
+        run: |
+          python3 - <<'EOF'
+          import os, re, json, sys
+          root = "site"
+          files = [os.path.join(r, n) for r, d, f in os.walk(root)
+                   for n in f if n.endswith(".html")]
+          errors = []
+          paths = {os.path.relpath(p, root) for p in files}
+          for f in files:
+              rel = os.path.relpath(f, root)
+              base = os.path.dirname(rel)
+              txt = open(f, encoding="utf-8").read()
+              for m in re.findall(r'<script type="application/ld\+json">(.*?)</script>', txt, re.S):
+                  try:
+                      json.loads(m)
+                  except Exception as e:
+                      errors.append(f"{rel}: invalid JSON-LD ({e})")
+              for h in re.findall(r'href="([^"]+)"', txt):
+                  if h.startswith(("http", "#", "mailto")):
+                      continue
+                  if os.path.normpath(os.path.join(base, h)) not in paths:
+                      errors.append(f"{rel}: broken link -> {h}")
+              for req in ("<title>", 'name="description"', 'rel="canonical"', "<h1>"):
+                  if req not in txt:
+                      errors.append(f"{rel}: missing {req}")
+              if "example.org" in txt:
+                  errors.append(f"{rel}: placeholder origin not replaced")
+          print(f"checked {len(files)} pages, {len(errors)} errors")
+          for e in errors[:40]:
+              print("  ", e)
+          sys.exit(1 if errors else 0)
+          EOF
+
+      - name: Disable Jekyll processing
+        run: touch site/.nojekyll
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
