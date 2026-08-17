@@ -56,9 +56,7 @@ controlled. <a href="timeline.html">The full chronology</a> sets these against e
 the only published analysis to find no significant change point, arguing the effect comes from
 uneven sampling. That was contested by
 <a href="papers/{P['desilva2023']['slug']}.html">DeSilva et al. (2023)</a>, who corrected their
-dataset and reaffirmed the decline, and again by
-<a href="papers/{P['decaro2024']['slug']}.html">De Caro (2024)</a>, who rebuilt the modern reference
-value and confirmed a reduction.</td></tr>
+dataset and reaffirmed the decline.</td></tr>
 <tr><td>What is the modern human average?</td>
 <td>Estimates run from about 1,297 cc to 1,460 cc, depending on which population was measured and
 by whom.</td></tr>
@@ -71,8 +69,8 @@ change isometric once lean body mass is controlled.</td></tr>
 predicts both brain and body size. Will et al. (2021) find temperature predicts body size well and
 brain size only weakly and indirectly.</td></tr>
 <tr><td>Is volume the right variable?</td>
-<td>Neubauer and colleagues argue the informative change after 300,000 years ago was in shape, not
-size. Logan and colleagues make the broader case that gross volume conflates independently evolving
+<td>Neubauer et al. (2018) argue the informative change after 300,000 years ago was in shape, not
+size. Logan et al. (2018) make the broader case that gross volume conflates independently evolving
 components.</td></tr>
 </table>
 
@@ -84,7 +82,7 @@ established.</p>
 <div class="card"><h3>Body size</h3>
 <p>Brains scale with bodies. Controlled for lean body mass the change looks isometric, which would
 make much of the measured decline in encephalization an artefact of rising modern body fat rather
-than lost neural tissue. Ruff and colleagues made the general form of this argument in 1997.
+than lost neural tissue. Ruff, Trinkaus and Holliday (1997) made the general form of this argument.
 <a href="body-size.html">More</a></p></div>
 
 <div class="card"><h3>Climate</h3>
@@ -93,8 +91,8 @@ literature on thermoregulation and body form running back to Roberts in 1953. Wh
 follows the same signal is disputed. <a href="climate.html">More</a></p></div>
 
 <div class="card"><h3>Metabolic cost</h3>
-<p>Brain tissue is expensive. Kuzawa and colleagues measured childhood brain glucose use at roughly
-two thirds of resting metabolic rate. Fonseca-Azevedo and Herculano-Houzel identified a feeding-time
+<p>Brain tissue is expensive. Kuzawa et al. (2014) measured childhood brain glucose use at roughly
+two thirds of resting metabolic rate. Fonseca-Azevedo and Herculano-Houzel (2012) identified a feeding-time
 ceiling on how many neurons a primate can support. Beyond some point the tissue may stop paying for
 itself. <a href="papers/{P['stibel2025']['slug']}.html">More</a></p></div>
 
@@ -105,16 +103,13 @@ can sit outside the skull, selection for carrying more of it weakens.
 
 <div class="card"><h3>Self-domestication</h3>
 <p>Domesticated mammals show brain reductions of 8 to 30 percent. Selection for social tolerance in
-humans has been argued to produce the same developmental signature, with Cieri and colleagues
+humans has been argued to produce the same developmental signature, with Cieri et al. (2014)
 documenting facial and brow reduction over the same period. The parallel is contested.
 <a href="self-domestication.html">More</a></p></div>
 
 <h2>The last century is a separate question</h2>
 
-<p>Measurements of living and recently deceased people run the other way. Miller and Corsellis found
-brain weight rising across the twentieth century in a large autopsy series. Jantz and Jantz document
-substantial change in Euro-American cranial size and shape across roughly 150 years. DeCarli and
-colleagues, using MRI in Framingham Heart Study participants born between 1930 and 1970, found
+<p>Measurements of living and recently deceased people run the other way. Miller and Corsellis (1977) found brain weight rising across the twentieth century in a large autopsy series. Jantz and Jantz (2016) document substantial change in Euro-American cranial size and shape across roughly 150 years. DeCarli et al. (2024), using MRI in Framingham Heart Study participants born between 1930 and 1970, found
 intracranial and cerebral volumes increasing across birth decades.</p>
 
 <p>None of this bears on the evolutionary trend, and it is a mistake to set the two against each
@@ -136,7 +131,7 @@ number carefully.</p>
 correlate somewhere between r = .19 and r = .40 depending on sample and measurement quality, which
 leaves most variance unexplained either way. Neanderthals had larger brains than living humans.
 Measured cognitive performance rose by roughly three IQ points per decade through the twentieth
-century, and Norwegian conscript data show that rise and its later reversal are both environmental.
+century, and Norwegian conscript data (Bratsberg and Rogeberg 2018) show that rise and its later reversal are both environmental.
 <a href="cognition.html">More on brain size and cognition</a></p></div>
 
 <h3>Sources on this page</h3>
@@ -227,7 +222,7 @@ obscure earlier ones. Four juvenile Neanderthal specimens and a duplicate entry 
 the Morton Collection. Removing it did not appreciably change the modern estimate.</p>
 <p>Maintained: across 19 published studies spanning about 90 years the average reported decrease is
 8.5%, and the Pleistocene-Holocene difference remains significant when tested against two independent
-modern reference datasets (Dekaban and Sadowsky, n = 3,399; Beals et al., n = 5,288) as well as their
+modern reference datasets (Dekaban and Sadowsky 1978, n = 3,399; Beals et al. 1984, n = 5,288) as well as their
 own sample. The title concedes the timing question. The
 authors' position becomes that a reduction occurred, that its date is uncertain across roughly
 5,000 to 3,000 BP, and that the question warrants more work.</p>
@@ -236,21 +231,12 @@ authors' position becomes that a reduction occurred, that its date is uncertain 
 <div class="round r4">
 <span class="yr">2024</span>
 <h3><a href="papers/{P['decaro2024']['slug']}.html">De Caro</a></h3>
-<p>The round almost no coverage mentions, and the one that moves the argument furthest. De Caro
-rebuilt the modern reference value from four sex-balanced datasets totalling 10,363 individuals and
-got 1,341 &plusmn; 130 cc, close to DeSilva et al.'s 1,345 cc and well above the 1,297 cc figure
-Villmoare and Grabowski had objected to. That removes the arithmetic objection.</p>
-<p>He then found a sampling defect neither earlier paper caught. The 25 crania from Afalou, Algeria,
-dated around 11.5 ka, are strongly male-biased, roughly 20 males to 5 females, and make up about 9%
-of the <em>H. sapiens</em> data older than 1 ka. With that subset discarded the reduction across
-5 ka to 0.15 ka still holds, and De Caro writes that his analysis "confirms the result of DeSilva
-et al. (2021, 2023) of an endocranial volume reduction during the last 3&ndash;5 ka."</p>
-<p>His disagreement is about timing rather than existence. A log-age fit of the <em>H. sapiens</em>
-means returns an adjusted R&sup2; of 0.98 and implies the decline has been continuous since at least
-the Late Pleistocene, and possibly since the species originated around 300 ka, rather than starting
-at 3&ndash;5 ka. He also quantifies how thin the signal is: about 50 cc of reduction per log-decade
-against a within-species range of roughly 1,000 cc, so around 95% of the scatter in the data is
-natural variability and only about 5% is time.</p>
+<p>A short commentary working entirely from the DeSilva dataset, with no new specimens. It recomputes
+a modern reference value of 1,341 &plusmn; 130 cc from four sex-balanced samples (Dekaban and Sadowsky 1978; Ho et al. 1980; Beals et al. 1984), argues that a
+25-cranium subset from Afalou, Algeria is male-biased and should be excluded, and reports that the
+reduction holds without it. It also argues the decline runs continuously from the Late Pleistocene
+rather than beginning at 3&ndash;5 ka. The sex-balance inference is drawn from histogram shape rather
+than osteological sexing.</p>
 </div>
 
 <h2>What the wider literature adds</h2>
@@ -268,7 +254,7 @@ range in the earliest <em>H. sapiens</em> around 300,000 years ago. What changed
 endocranial <em>shape</em>, which became globular gradually between roughly 100,000 and 35,000 years
 ago. On this reading the interesting variable was never volume.</p>
 
-<p>Du and colleagues demonstrated in 2018 that conclusions about the pattern and pace of hominin
+<p>Du et al. (2018) demonstrated that conclusions about the pattern and pace of hominin
 brain size change are scale-dependent: how the data are binned substantially affects what trend
 appears. That cuts against both sides of the Holocene dispute.</p>
 
@@ -277,9 +263,8 @@ appears. That cuts against both sides of the Holocene dispute.</p>
 <p>Every estimate of how much the brain has declined is a subtraction, and the number being
 subtracted comes from living or recently deceased people. That endpoint is not stable.</p>
 
-<p>Miller and Corsellis reported in 1977 that brain weight had been rising across the twentieth
-century in a large autopsy series. Jantz and Jantz have documented substantial change in
-Euro-American cranial size and shape across roughly 150 years. DeCarli and colleagues, using MRI in
+<p>Miller and Corsellis (1977) reported that brain weight had been rising across the twentieth
+century in a large autopsy series. Jantz and Jantz (2016) have documented substantial change in Euro-American cranial size and shape across roughly 150 years. DeCarli et al. (2024), using MRI in
 the Framingham cohort, found intracranial and cerebral volumes increasing across birth decades from
 1930 to 1970.</p>
 
@@ -426,14 +411,14 @@ every prehistoric comparison subtracts from.</p></div>
 
 <div class="note"><span class="lbl">Units differ between rows</span>
 <p>Different rows use different units. Cranial capacity in cubic centimetres and brain mass in grams
-are related but not interchangeable. Stibel (2021, 2023, 2025) converts using Ruff et al.'s equation,
+are related but not interchangeable. Stibel (2021, 2023, 2025) converts using Ruff et al.'s (1997) equation,
 brain mass = 1.147 &times; (cranial capacity)<sup>0.976</sup>; DeSilva et al. (2023) average two published
 equations instead. Comparisons across rows drawn from different studies are indicative, not precise.</p></div>
 
 <h2>The shape of the curve matters more than any single number</h2>
 <p>The parts of this timeline are contested very differently. Expansion through the Pleistocene is
 well established and uncontroversial. The plateau at ~300,000 BP is a recent finding from a large
-single-analysis dataset, and Neubauer and colleagues reach a compatible result by a different route.
+single-analysis dataset, and Neubauer et al. (2018) reach a compatible result by a different route.
 The Holocene decline is the only part under active dispute, and it is the part that receives
 essentially all public attention.</p>
 
@@ -492,8 +477,7 @@ in humans only across latitude ranges greater than about 50 degrees, and that ea
 hemisphere-biased samples. Wells (2012) reported that the cline may run through fat rather than lean
 mass, with Polynesian populations contradicting every trend. Savell, Auerbach and Roseman (2016) used
 quantitative genetic modelling to show that some limb clines are correlated side effects rather than
-adaptations, and concluded that group mean differences are poor evidence of adaptation. Riemer,
-Guralnick and White (2018) found no consistent mass-temperature relationship across endotherms
+adaptations, and concluded that group mean differences are poor evidence of adaptation. Riemer, Guralnick and White (2018) found no consistent mass-temperature relationship across endotherms
 generally, in a sample of 952 bird and mammal species.</p>
 
 <h2>Climate and size in the fossil record</h2>
@@ -538,7 +522,7 @@ populations, not a response an individual body makes to a warm decade.</p>
 decouple modern bodies from ambient temperature, which is why Katzmarzyk and Leonard found the
 climate-body slopes had flattened since Roberts measured them, and why Stibel's own body size paper
 argues cultural adaptation muted the morphological response in later periods. The second is that
-modern cranial dimensions do move on short timescales, as Jantz and Jantz have documented, but
+modern cranial dimensions do move on short timescales, as Jantz and Jantz (2016) have documented, but
 through nutrition, disease burden and growth conditions rather than temperature, and the measured
 direction is upward.</p>
 
@@ -654,25 +638,25 @@ def page_cognition():
 
 <div class="answer">
 <p><strong>The correlation is real, weak, and contested in both directions.</strong> Pooled estimates
-run from r = .24 (Pietschnig et al., 88 studies) to r = .31 (Gignac and Bates, reanalysing the same
-data), with the largest single study, Nave et al. at n = 13,608, giving r = .19. All of them leave
+run from r = .24 (Pietschnig et al. 2015, 88 studies) to r = .31 (Gignac and Bates 2017,
+reanalysing the same data), with the largest single study, Nave et al. (2019) at n = 13,608, giving r = .19. All of them leave
 most variance unexplained. Neanderthals had larger brains than living humans, and measured cognitive
 performance rose sharply through the twentieth century.</p>
 </div>
 
 <h2>How large is the association</h2>
 
-<p>Pietschnig and colleagues pooled 88 studies covering more than 8,000 individuals in 2015 and found
+<p>Pietschnig et al. (2015) pooled 88 studies covering more than 8,000 individuals in 2015 and found
 r = .24, about 6% of variance. They reported that null results had been systematically omitted and
 that effect sizes had declined over time, concluding it "is not warranted to interpret brain size as
 an isomorphic proxy of human intelligence differences."</p>
 
-<p>Gignac and Bates reanalysed that same dataset two years later and reached a different answer.
+<p>Gignac and Bates (2017) reanalysed that same dataset and reached a different answer.
 Restricting to healthy adults and accounting for the quality of the intelligence measure, they found
 r = .31, rising to .39 for studies using excellent measures, and argued the true value is closer to
 .40 with no detectable publication bias. The disagreement is live and unresolved.</p>
 
-<p>The largest single study, Nave and colleagues' preregistered analysis of 13,608 UK Biobank
+<p>The largest single study, Nave et al.'s (2019) preregistered analysis of 13,608 UK Biobank
 participants, found r = .19 for fluid intelligence after controlling for sex, age, height,
 socioeconomic status and population structure. Around 2% of variance.</p>
 
@@ -682,20 +666,19 @@ capacity. The relationship is too weak and the confounds too large.</p>
 
 <h2>Volume is the wrong variable</h2>
 
-<p>A substantial literature argues that gross size is simply a poor measure. Logan and colleagues set
-out the case in 2018: volume conflates independently evolving components, and organisation,
-connectivity and neuron density carry the explanatory weight. Deaner and colleagues found that overall
+<p>A substantial literature argues that gross size is simply a poor measure. Logan et al. (2018) set out the case: volume conflates independently evolving components, and organisation,
+connectivity and neuron density carry the explanatory weight. Deaner et al. (2007) found that overall
 brain size, not encephalization quotient, best predicts cognitive ability across non-human primates,
-undercutting the standard comparative currency. Smaers and colleagues showed across roughly 1,400
+undercutting the standard comparative currency. Smaers et al. (2021) showed across roughly 1,400
 mammals that brain-body scaling slopes vary by clade and over time, so one encephalization formula is
 not comparable across lineages.</p>
 
-<p>Herculano-Houzel's cell-counting work reframed the question again: the human brain is a linearly
+<p>Herculano-Houzel's (2009) cell-counting work reframed the question again: the human brain is a linearly
 scaled-up primate brain, and neuron number rather than volume is the quantity that tracks capability.</p>
 
-<p>Neubauer, Hublin and Gunz applied this directly to human evolution. Endocranial volume was already
+<p>Neubauer, Hublin and Gunz (2018) applied this directly to human evolution. Endocranial volume was already
 within the modern range 300,000 years ago; what changed afterwards was shape, becoming globular
-between roughly 100,000 and 35,000 years ago. Ponce de León and colleagues similarly found that
+between roughly 100,000 and 35,000 years ago. Ponce de León et al. (2021) similarly found that
 ape-like frontal organisation persisted long after the genus <em>Homo</em> originated, separating
 reorganisation from enlargement.</p>
 
@@ -704,12 +687,12 @@ reorganisation from enlargement.</p>
 <ul>
 <li><strong>Neanderthals had larger brains.</strong> Würm-period Neanderthal cranial capacity averages
 1,459 cc, statistically indistinguishable from contemporaneous <em>H. sapiens</em> and larger than the
-modern average. Pearce, Stringer and Dunbar argue more of that volume went to vision and body control,
+modern average. Pearce, Stringer and Dunbar (2013) argue more of that volume went to vision and body control,
 which is itself an argument that volume does not translate directly into general cognition.</li>
 <li><strong>Measured performance rose while cranial capacity is argued to have fallen.</strong> Trahan
-and colleagues put the Flynn effect at roughly 2.9 to 3 IQ points per decade across 285 studies from
+et al. (2014) put the Flynn effect at roughly 2.9 to 3 IQ points per decade across 285 studies from
 1951 to 2010.</li>
-<li><strong>That rise was environmental.</strong> Bratsberg and Rogeberg recovered the Flynn effect,
+<li><strong>That rise was environmental.</strong> Bratsberg and Rogeberg (2018) recovered the Flynn effect,
 its turning point and its subsequent reversal entirely from within-family variation in Norwegian
 conscript data, leaving no room for a genetic or biological explanation.</li>
 </ul>
@@ -807,8 +790,7 @@ energy consumption and up to 60 percent in early development.</p>
 expensive that is. Kuzawa et al. (2014) measured childhood brain glucose use at 66.3 percent of
 resting metabolic rate in males and 65.0 percent in females, and found body growth slows as brain
 demand rises. Fonseca-Azevedo and Herculano-Houzel (2012) identified a feeding-time ceiling on how
-many neurons a primate can support at a given body size. Aiello and Wheeler's (1995) expensive tissue
-hypothesis proposed the brain was paid for by a reduced gut, though Navarrete et al. (2011) later
+many neurons a primate can support at a given body size. Aiello and Wheeler's (1995) expensive tissue hypothesis proposed the brain was paid for by a reduced gut, though Navarrete et al. (2011) later
 found no such trade-off across a large mammal sample once fat was accounted for, and Pontzer et al.
 (2016) showed humans expanded the total energy budget rather than only reallocating within it. Isler
 and van Schaik's (2009) expensive brain framework treats size as jointly limited by energy supply and
@@ -856,35 +838,31 @@ that applies to the coarse bins Stibel's sample sizes required.</p>
 <p>Work on contemporary offloading is often cited as support. It is weaker than it looks, and a
 resource that leans on it should say so.</p>
 
-<p>Risko and Gilbert's 2016 review defines the field and frames offloading as adaptive metacognitive
-strategy selection, not decline. Gilbert and colleagues later showed offloading is governed by
+<p>Risko and Gilbert (2016) define the field and frames offloading as adaptive metacognitive
+strategy selection, not decline. Gilbert et al. (2020) later showed offloading is governed by
 metacognitive confidence rather than actual memory ability, with people systematically over-offloading:
 a rational-but-biased decision rather than erosion of capacity.</p>
 
-<p>Sparrow, Liu and Wegner's "Google effects on memory" is the most-cited experimental basis for the
-idea that search changes memory. It is also among the least replicated. Hesselmann's preregistered
-direct replication in 2020 did not reproduce the effect. Ward and colleagues' "brain drain" finding,
-that a nearby smartphone reduces working memory, likewise failed to replicate in Ruiz Pardo and
-Minda's preregistered study. Two meta-analyses of the brain drain literature reach opposite
-conclusions: Parry finds null effects for most cognitive functions, Böttger and colleagues find the
-effect real.</p>
+<p>Sparrow, Liu and Wegner's (2011) "Google effects on memory" is the most-cited experimental basis for the
+idea that search changes memory. It is also among the least replicated. Hesselmann's (2020) preregistered direct replication did not reproduce the effect. Ward et al.'s (2017) "brain drain" finding,
+that a nearby smartphone reduces working memory, likewise failed to replicate in Ruiz Pardo and Minda's (2022) preregistered study. Two meta-analyses of the brain drain literature reach opposite
+conclusions: Parry (2023) finds null effects for most cognitive functions; Böttger et al. (2023) find the effect real.</p>
 
-<p>Where the evidence is cleaner, it shows reallocation rather than loss. Grinschgl and colleagues
-found offloading improves immediate performance and worsens later memory for the offloaded content
-specifically. Storm and Stone found that saving one file before studying another <em>improves</em>
+<p>Where the evidence is cleaner, it shows reallocation rather than loss. Grinschgl et al. (2021) found offloading improves immediate performance and worsens later memory for the offloaded content
+specifically. Storm and Stone (2015) found that saving one file before studying another <em>improves</em>
 memory for the second. That is a cost-benefit structure, not a decline.</p>
 
 <h2>Related but distinct ideas</h2>
 
 <ul>
-<li>Clark and Chalmers' <strong>extended mind</strong> is a philosophical claim that cognitive
-processes can literally extend into the environment. Sterelny's <strong>scaffolded mind</strong>
+<li>Clark and Chalmers' (1998) <strong>extended mind</strong> is a philosophical claim that cognitive
+processes can literally extend into the environment. Sterelny's (2010) <strong>scaffolded mind</strong>
 accounts for the same evidence without the metaphysical commitment, and is the main sceptical
 alternative.</li>
-<li>Malafouris's <strong>material engagement theory</strong> treats things as participating in
+<li>Malafouris's (2019) <strong>material engagement theory</strong> treats things as participating in
 cognition rather than merely recording it.</li>
 <li><strong>Distributed cognition</strong> describes cognitive work spread across people and
-artefacts, and is what DeSilva and colleagues invoked in 2021 through the eusocial insect analogy.</li>
+artefacts, and is what DeSilva et al. (2021) invoked through the eusocial insect analogy.</li>
 </ul>
 
 <div class="note"><span class="lbl">What Stibel (2025) does not claim</span>
@@ -941,9 +919,9 @@ reflects an equivalent process, or a coincidence of separate causes, is actively
 
 <h2>The comparative baseline</h2>
 
-<p>Kruska's review across eutherian mammals found brain size reductions of roughly 8 to 30 percent in
+<p>Kruska's (2005) review across eutherian mammals found brain size reductions of roughly 8 to 30 percent in
 domesticated lineages, and, importantly, that returning animals to the wild does not restore wild-type
-brain size. Balcarcel et al. (2021) found the reduction in cattle scales with the intensity of human
+brain size. Balcarcel et al. (2021) found that the reduction in cattle scales with the intensity of human
 contact, with dairy breeds most reduced and fighting bulls least.</p>
 
 <p>Wilkins, Wrangham and Fitch (2014) proposed a developmental mechanism: mild neural crest cell
@@ -953,8 +931,7 @@ smaller brains, shorter faces and reduced pigmentation.</p>
 <h2>The human case</h2>
 
 <p>Cieri et al. (2014) documented brow ridge reduction and upper facial shortening from the Middle
-Pleistocene to recent humans, and argued this reflects selection for social tolerance. Hare's (2017)
-"survival of the friendliest" account develops the case that selection for prosociality drove a
+Pleistocene to recent humans, and argued this reflects selection for social tolerance. Hare's (2017) "survival of the friendliest" account develops the case that selection for prosociality drove a
 domestication-like syndrome in <em>H. sapiens</em>. On this reading the cranial reduction of the last
 tens of thousands of years is a by-product of becoming a more cooperative species, not a response to
 climate or a consequence of offloading.</p>
@@ -966,7 +943,7 @@ evidence that humans display the domestication trait set is weaker and more equi
 framing suggests.</p>
 
 <p>The underlying mechanism has also come under pressure. Johnsson, Henriksen and Wright (2021) argued that the neural crest hypothesis does not provide a unified explanation for domestication;
-Wilkins, Wrangham and Fitch published a reply in the same issue. Lord et al. (2020) showed that the
+Wilkins, Wrangham and Fitch (2021) published a reply in the same issue. Lord et al. (2020) showed that the
 Russian farm-fox experiment, the empirical keystone of the whole framework, used founders already bred
 in captivity for decades, which undercuts its status as a clean demonstration. Gleeson and Wilson (2023) have proposed a third account based on shared reproductive disruption.</p>
 
@@ -1000,6 +977,92 @@ is smaller than reported, or absent.</p>
     return write("self-domestication.html",
                  shell("self-domestication.html", "Self-domestication", d, body,
                        [article_ld("Self-domestication", d, "self-domestication.html")]))
+
+
+# =========================================================== 7c. COPE'S RULE
+def page_copes():
+    d = ("Cope's rule predicts lineages grow larger over time. It has been tested against hominin "
+         "body size by a small number of studies, and never against hominin brain size.")
+    body = f"""
+<h1>Cope's rule and the hominin record</h1>
+
+<div class="answer">
+<p><strong>Partly, for body size. Not at all, for brain size.</strong> Two studies have tested Cope's
+rule against hominin body mass and both conclude the record is partly consistent with it but more
+complicated than a simple trend. No published study frames hominin brain size evolution in Cope's
+rule terms, and this page does not either.</p>
+</div>
+
+<h2>What the rule says</h2>
+
+<p>Cope's rule is the observation that lineages tend to increase in body size over evolutionary time.
+It is a statistical tendency rather than a law, and whether it holds depends on the clade, the
+timescale and how species turnover is handled. Montgomery, Capellini, Barton and Mundy (2010) tested
+it across primates and rejected it.</p>
+
+<h2>Hominin body size</h2>
+
+<p>Will, Pablos and Stock (2017) assembled 254 body mass and 204 stature estimates from 311 specimens
+spanning 4.4 million years. They find a significant positive association between body size and time,
+which is what Cope's rule predicts, but qualify it heavily. The record contains phases of stasis
+punctuated by rapid increases, a reduction among australopithecines between roughly 3.2 and 2.2 Ma,
+and clear exceptions in <em>H. naledi</em>, <em>H. floresiensis</em> and declining Late Pleistocene
+and Holocene <em>H. sapiens</em>.</p>
+
+<p>Gardner, Püschel, White, Sakamoto and Venditti (2026) revisited the question with 386 specimens
+across 21 taxa and Bayesian phylogenetic modelling. They find strong evidence for marked body mass
+increase in later <em>Homo</em> and moderate support for a general increase across the lineage. A
+correction to this paper was published in August 2026.</p>
+
+<p>Both conclusions land in the same place: the direction is right, the pattern is not a clean trend,
+and the Holocene runs the other way. <a href="body-size.html">More on body size</a></p>
+
+<h2>Why brain size is not treated this way</h2>
+
+<p>Cope's rule is about body size. The hominin brain literature uses a different framework
+entirely, and asks a different question: whether encephalization accumulated within lineages or
+through the replacement of smaller-brained species by larger-brained ones.</p>
+
+<p>Püschel, Nicholson, Baker, Barton and Venditti (2024) answered that directly. Across 285 specimens
+analysed over 1,000 Bayesian phylogenies, they found a significant within-species effect of time on
+relative brain size and no significant between-species effect. Speciation rate was not a predictor.
+Their conclusion is that hominin brain size macroevolution "seems to be entirely explained by
+micro-evolutionary, population-level processes." The within-species trend also accelerates in more
+recent lineages, correlating with time position at r = 0.74, or 0.9 with Neanderthals excluded.</p>
+
+<p>That is a finding about anagenesis versus cladogenesis, not about Cope's rule, and the authors do
+not use the term. The two questions are related, since both concern whether change happens inside
+lineages or between them, but the connection has not been made in print and this page does not make
+it.</p>
+
+<h2>Scale changes the answer</h2>
+
+<p>Two papers show that conclusions about the pace and pattern of hominin brain size change depend on
+how the data are binned. Du and colleagues (2018) demonstrated the effect directly. Gingerich (2022)
+synthesised 14 studies into a single endocranial series and recovered four phases: stasis from
+roughly 3.2 to 2.0 Ma, increase from 2.0 to 1.5 Ma, stasis from 1.5 to 0.7 Ma, and increase from
+about 0.7 Ma onward. His median step rate of 0.15 standard deviations per generation is close to
+rates measured in living populations, which is a useful check that the fossil rates are not
+anomalous.</p>
+
+<p>Any claim that hominins do or do not follow a size trend has to specify the timescale first.</p>
+
+<h3>Sources on this page</h3>
+<ul class="lit">
+<li>{{lit('willpablos2017')}}</li>
+<li>{{lit('gardner2026')}}</li>
+<li>{{lit('puschel2024')}}</li>
+<li>{{lit('montgomery2010')}}</li>
+<li>{{lit('gingerich2022')}}</li>
+<li>{{lit('du2018')}}</li>
+<li>{{src('stibel2023body')}}</li>
+<li>{{lit('willstock2016')}}</li>
+</ul>
+"""
+    return write("copes-rule.html", shell("copes-rule.html", "Cope's rule and the hominin record",
+                                          d, body,
+                                          [article_ld("Cope's rule and the hominin record", d,
+                                                      "copes-rule.html")]))
 
 
 # =========================================================== 8. QUESTIONS
@@ -1191,6 +1254,62 @@ cultural transmission.</p>
 {block("Domestication and gracilization", ["kruska2005","wilkins2014","cieri2014","hare2017","sanchez2019","leach2003"])}
 {block("Archaic and Neanderthal comparisons", ["neubauer2018","poncedeleon2021","du2018","pearce2013","monson2026"])}
 
+<h2>Further reading in the popular press</h2>
+
+<p class="meta">Secondary sources. Everything above is the primary literature; these are accounts
+written for a general reader. Coverage of both positions is listed, because a reader who has arrived
+here from one of them should be able to find the other.</p>
+
+<h3>Reporting on the decline and its causes</h3>
+<ul class="lit">
+<li><a href="https://www.wsj.com/science/human-brains-shrinking-evolution-science-980c45e">Our Big
+Brains Have Shrunk. Scientists Might Know Why.</a> <em>The Wall Street Journal</em>, September 2023.
+Covers the DeSilva et al. work and the exchange around it.</li>
+<li><a href="https://www.bbc.com/future/article/20240517-the-human-brain-has-been-shrinking-and-no-one-quite-knows-why">The
+human brain has been shrinking and no one quite knows why</a>. Jasmin Fox-Skelly, <em>BBC
+Future</em>, 17 May 2024. The most widely read account, and one of the few that treats the question
+as genuinely open.</li>
+<li><a href="https://www.livescience.com/archaeology/human-evolution/if-humans-are-getting-smarter-why-are-our-brains-shrinking">If
+humans are getting smarter, why are our brains shrinking?</a> Owen Jarus, <em>Live Science</em>,
+9 May 2026. The most balanced piece available, quoting researchers on both sides.</li>
+<li><a href="https://www.zmescience.com/science/news-science/human-brain-shrinking/">Human brains may
+have started shrinking thousands of years ago. Scientists still can't agree why.</a> Tibi Puiu,
+<em>ZME Science</em>, 18 May 2026. The most complete lay treatment of the full 2021&ndash;2024
+exchange.</li>
+<li><a href="https://www.psypost.org/evolution-may-have-capped-human-brain-size-to-balance-energy-costs-and-survival/">Evolution
+may have capped human brain size to balance energy costs and survival</a>. <em>PsyPost</em>,
+24 August 2025. Covers the metabolic ceiling and offloading argument.</li>
+<li><a href="https://www.psypost.org/new-research-links-climate-change-to-shrinking-brain-size-in-modern-humans/">New
+research links climate change to shrinking brain size in modern humans</a>. <em>PsyPost</em>.
+Covers the climate analysis. The headline overstates the finding, which concerns a multi-millennial
+signal rather than modern individuals.</li>
+</ul>
+
+<h3>Reporting on the 2022 reanalysis</h3>
+<ul class="lit">
+<li><a href="https://www.unlv.edu/news/release/unlv-research-no-human-brain-did-not-shrink-3000-years-ago">No,
+the human brain did not shrink 3,000 years ago</a>. University of Nevada, Las Vegas news release,
+August 2022. The source of most coverage of Villmoare &amp; Grabowski (2022).</li>
+<li><a href="https://www.advancedsciencenews.com/no-the-human-brain-did-not-shrink/">No, the human
+brain did not shrink</a>. Victoria Corless, <em>Advanced Science News</em>, 18 August 2022.</li>
+<li><a href="https://www.sciencedaily.com/releases/2022/08/220807102043.htm">Did the human brain
+shrink 3,000 years ago?</a> <em>ScienceDaily</em>, August 2022.</li>
+</ul>
+
+<p class="meta">None of the three pieces above has been updated since the 2023 response was published,
+which is a large part of why the public record on this question is out of date.</p>
+
+<h3>On the modern increase</h3>
+<ul class="lit">
+<li><a href="https://www.scientificamerican.com/article/human-brains-may-be-getting-bigger/">Human
+brains may be getting bigger</a>. <em>Scientific American</em>. Covers DeCarli et al. (2024). Read
+alongside <a href="index.html">the overview page</a> on why a secular increase over decades and an
+evolutionary decline over millennia are not in conflict.</li>
+<li><a href="https://www.discovermagazine.com/the-sciences/if-modern-humans-are-so-smart-why-are-our-brains-shrinking">If
+modern humans are so smart, why are our brains shrinking?</a> Kathleen McAuliffe,
+<em>Discover</em>, 2011. The oldest widely read treatment, predating the current dispute.</li>
+</ul>
+
 <h2>Licence and access</h2>
 <table>
 <tr><th>Paper</th><th>Licence</th><th>Access</th></tr>
@@ -1363,7 +1482,7 @@ research study referenced herein, it should be assumed that the journal article 
 def build():
     os.makedirs(OUT, exist_ok=True)
     made = [page_index(), page_debate(), page_timeline(), page_climate(), page_body(),
-            page_cognition(), page_offload(), page_selfdom(), page_questions(), page_papers(),
+            page_cognition(), page_offload(), page_selfdom(), page_copes(), page_questions(), page_papers(),
             page_glossary(), page_about()]
     for k in CORE_FIVE + CONTEXT_PAPERS:
         made.append(page_paper(k))

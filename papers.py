@@ -345,18 +345,16 @@ PAPERS = {
         "oa": "Gold open access",
         "dates": "Published 11 April 2024",
         "type": "General commentary",
-        "role": ("Round 4. Re-examines the DeSilva dataset for sex-representation bias, rebuilds the "
-                 "modern reference value, and reaches a conclusion that supports neither side "
-                 "cleanly: the reduction is real, but it is older and slower than a change point at "
-                 "3&ndash;5 ka implies."),
+        "role": ("Round 4. A short commentary re-examining the DeSilva dataset for sex-representation "
+                 "bias. It introduces no new specimens and works entirely from data published by "
+                 "others."),
         "abstract": "",
         "findings": [
-            "Rebuilds the modern reference value from four sex-balanced datasets (Dekaban &amp; Sadowsky n = 3,399; Ho et al. n = 1,261; Beals et al. n = 5,288; plus DeSilva's n = 415), giving <strong>1,341 &plusmn; 130 cc across n = 10,363</strong>. This addresses the objection Villmoare &amp; Grabowski raised against the 1,297 cc figure, and lands close to DeSilva et al.'s own 1,345 cc.",
-            "Identifies a specific sampling defect neither earlier paper caught: the 25 crania from Afalou, Algeria (dated ~11.5 ka) are strongly male-biased, estimated at roughly 20 males to 5 females, and represent about 9% of the <em>H. sapiens</em> data older than 1 ka. De Caro argues this subset should be discarded.",
-            "With that subset removed, the reduction across the 5 ka &ge; age &gt; 0.15 ka interval still holds. De Caro writes that the analysis &ldquo;confirms the result of DeSilva et al. (2021, 2023) of an endocranial volume reduction during the last 3&ndash;5 ka.&rdquo;",
-            "But he disputes the timing: a log-age linear fit of the <em>H. sapiens</em> means gives an adjusted R&sup2; of 0.98 and implies reduction has been continuous since at least the Late Pleistocene, and probably since the species' origin around 300 ka, rather than beginning at 3&ndash;5 ka.",
-            "Quantifies how little of the scatter is temporal: the fit implies a decrease of roughly <strong>50 cc per log-decade</strong> against a within-species range spanning about 1,000 cc, so approximately <strong>95% of the variance is natural variability</strong> and only about 5% is time evolution.",
-            "Notes that <em>H. sapiens</em> appears to run counter to the trend in other hominin species, whose mean endocranial volumes increase over the same span.",
+            "Recomputes a modern reference value from four sex-balanced datasets (Dekaban &amp; Sadowsky n = 3,399; Ho et al. n = 1,261; Beals et al. n = 5,288; plus DeSilva's n = 415), giving 1,341 &plusmn; 130 cc across n = 10,363.",
+            "Argues that the 25 crania from Afalou, Algeria (~11.5 ka) are male-biased, estimated from histogram shape rather than osteological sexing, and should be excluded.",
+            "Reports that the reduction across 5 ka &ge; age &gt; 0.15 ka holds with that subset removed.",
+            "Fits a log-age regression to period means and argues the decline is continuous from the Late Pleistocene rather than beginning at 3&ndash;5 ka.",
+            "Notes that the fit implies roughly 50 cc per log-decade against a within-species range near 1,000 cc, so most variance in the data is individual rather than temporal.",
         ],
         "limitations": [
             "The sex-balance inference for the Afalou sample is estimated from the shape of a histogram rather than from independent osteological sexing.",
@@ -746,6 +744,35 @@ LIT.update({
 })
 
 
+LIT.update({
+ "puschel2024": ("Püschel, T.A., Nicholson, S.L., Baker, J., Barton, R.A. &amp; Venditti, C. (2024). "
+   "Hominin brain size increase has emerged from within-species encephalization. "
+   "<em>PNAS</em> 121(49), e2409542121.", "10.1073/pnas.2409542121",
+   "Across 285 specimens and 1,000 Bayesian phylogenies, finds a significant within-species time "
+   "effect on relative brain size and no significant between-species effect. Encephalization "
+   "accumulated inside lineages rather than through species turnover."),
+ "gingerich2022": ("Gingerich, P.D. (2022). Pattern and rate in the Plio-Pleistocene evolution of "
+   "modern human brain size. <em>Scientific Reports</em> 12(1), 11216.", "10.1038/s41598-022-15481-3",
+   "Synthesises 14 studies into one endocranial series and finds four phases: stasis, increase, "
+   "stasis, increase. Argues tempo and mode are both scale-dependent."),
+ "willpablos2017": ("Will, M., Pablos, A. &amp; Stock, J.T. (2017). Long-term patterns of body mass "
+   "and stature evolution within the hominin lineage. <em>Royal Society Open Science</em> 4(11), "
+   "171339.", "10.1098/rsos.171339",
+   "254 body mass and 204 stature estimates across 311 specimens from 4.4 Ma. The main study "
+   "testing Cope's rule against the hominin record."),
+ "gardner2026": ("Gardner, J.D., Püschel, T.A., White, S., Sakamoto, M. &amp; Venditti, C. (2026). "
+   "Competing models of hominin body size evolution. <em>PNAS</em> 123(27), e2521732123.",
+   "10.1073/pnas.2521732123",
+   "386 specimens across 21 taxa. Finds marked body mass increase in later Homo and moderate "
+   "support for a general increase. A correction was issued in August 2026 (doi:10.1073/pnas.2625195123)."),
+ "montgomery2010": ("Montgomery, S.H., Capellini, I., Barton, R.A. &amp; Mundy, N.I. (2010). "
+   "Reconstructing the ups and downs of primate brain evolution. <em>BMC Biology</em> 8, 9.",
+   "10.1186/1741-7007-8-9",
+   "Explicitly tests Cope's rule across primates and rejects it. Brain size is treated separately "
+   "from body size throughout."),
+})
+
+
 def lit(key, note=False):
     """Render a wider-literature citation."""
     c, doi, n = LIT[key]
@@ -757,17 +784,36 @@ def lit(key, note=False):
     return out
 
 
+PARTICLES = {"de", "del", "della", "van", "von", "der", "la", "le", "di", "da", "dos"}
+
+
+def _surname_initials(full):
+    """'Jeff Morgan Stibel' -> 'Stibel, J.M.'  'Liberato De Caro' -> 'De Caro, L.'"""
+    parts = full.replace("&nbsp;", " ").split()
+    # walk back from the end collecting the surname, absorbing particles
+    i = len(parts) - 1
+    while i > 0 and parts[i - 1].lower().rstrip(".") in PARTICLES:
+        i -= 1
+    surname = " ".join(parts[i:])
+    given = parts[:i]
+    inits = "".join(g[0].upper() + "." for g in given if g)
+    return f"{surname}, {inits}" if inits else surname
+
+
+def _authors_short(authors):
+    names = [_surname_initials(a) for a in authors]
+    if len(names) == 1:
+        return names[0]
+    if len(names) <= 3:
+        return ", ".join(names[:-1]) + " &amp; " + names[-1]
+    return names[0] + " et al."
+
+
 def src(key, pre=""):
     """Render a PAPERS entry for an on-page source list, linked to its own page."""
     p = PAPERS[key]
-    a = p["authors"]
-    if len(a) == 1:
-        names = a[0]
-    elif len(a) <= 3:
-        names = ", ".join(a[:-1]) + " &amp; " + a[-1]
-    else:
-        names = a[0] + " et al."
-    out = f'{names} ({p["year"]}). <a href="{pre}papers/{p["slug"]}.html">{p["title"]}</a>.'
+    out = f'{_authors_short(p["authors"])} ({p["year"]}). '
+    out += f'<a href="{pre}papers/{p["slug"]}.html">{p["title"]}</a>.'
     if p.get("journal"):
         j = f' <em>{p["journal"]}</em>'
         if p.get("volume"):
