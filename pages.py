@@ -855,7 +855,7 @@ def page_rules():
          "climate rules reasonably well and Cope's rule barely at all. What the hominin fossil "
          "record shows for each.")
     body = f"""
-<h1>Do the size rules apply to humans?</h1>
+<h1>Do the biological rules apply to humans?</h1>
 
 <div class="answer">
 <p><strong>Two of the three hold up; the third does not.</strong> Bergmann's rule, that bodies are
@@ -916,11 +916,7 @@ artefact of the strong mass effect. <a href="climate.html">More on climate</a></
 
 <h2>Cope's rule, and why it fits worst</h2>
 
-<p>Cope's rule is the weakest of the three here, and it is worth being clear about why it gets
-discussed at all: it is the obvious alternative explanation for a size increase through time, so
-ruling it out matters.</p>
-
-<p>Will, Pablos and Stock (2017) assembled 254 body mass and 204 stature estimates from 311 specimens
+<p>Cope's rule is the weakest of the three here. Will, Pablos and Stock (2017) assembled 254 body mass and 204 stature estimates from 311 specimens
 spanning 4.4 million years and found a significant positive association between size and time, which
 is what Cope's rule predicts. They qualified it heavily: phases of stasis punctuated by rapid
 increases, a reduction among australopithecines between roughly 3.2 and 2.2 Ma, and clear exceptions
@@ -938,8 +934,9 @@ rather than directional, and the paper states that its results "do not support C
 
 <p>Hunt and Roy (2006) proposed a <strong>Cope-Bergmann rule</strong>: apparent size increase over
 geological time is really a correlated response to time and temperature together, rather than a
-directional trend in its own right. Stibel finds support for that reading, with models including both
-time and climate significant at <em>p</em> &lt; 0.0001 across the same 247 specimens.</p>
+directional trend in its own right. <a href="papers/{P['stibel2023body']['slug']}.html">Stibel (2023b)</a> finds support for that
+reading, with models including both time and climate significant at <em>p</em> &lt; 0.0001 across the
+same 247 specimens.</p>
 
 <p>On that account the size increase is real, but Cope's rule is the wrong explanation for it. The
 driver is climate, which is Bergmann's territory, rather than any general fitness advantage to being
@@ -974,17 +971,17 @@ roughly 3.2 to 2.0 Ma, increase from 2.0 to 1.5 Ma, stasis from 1.5 to 0.7 Ma, a
 about 0.7 Ma onward. His median step rate of 0.15 standard deviations per generation is close to rates
 measured in living populations, a useful check that the fossil rates are not anomalous.</p>
 
-<p>Any claim that humans do or do not follow a size rule has to specify the timescale first.</p>
+<p>Any claim that humans do or do not follow one of these rules has to specify the timescale first.</p>
 
 <h3>Sources on this page</h3>
 {sources(['roberts1953', 'ruff1994', 'katzmarzyk1998', 'foster2013', 'wells2012', 'savell2016', 'riemer2018', 'stibel2023body', 'willpablos2017', 'gardner2026', 'puschel2024', 'montgomery2010', 'gingerich2022', 'du2018', 'willstock2016'])}
 """
-    return write("size-rules.html",
-                 shell("size-rules.html",
+    return write("biological-rules.html",
+                 shell("biological-rules.html",
                        "Bergmann's, Allen's and Cope's rules in humans",
                        d, body,
-                       [article_ld("Do the size rules apply to humans? "
-                                   "Bergmann's, Allen's and Cope's rules", d, "size-rules.html")]))
+                       [article_ld("Do the biological rules apply to humans? "
+                                   "Bergmann's, Allen's and Cope's rules", d, "biological-rules.html")]))
 
 
 # =========================================================== 8. QUESTIONS
@@ -1095,13 +1092,13 @@ QAS = [
   f"these groups is a poor guide to cognitive capability; Pearce, Stringer and Dunbar (2013) argue "
   f"more of the Neanderthal volume went to vision and body control.</p>"),
  ("Does Cope's rule apply to humans?",
-  f"<p>Poorly, and it is the weakest of the three general size rules as applied to humans. Cope's "
+  f"<p>Poorly, and it is the weakest of the three general biological rules as applied to humans. Cope's "
   f"rule predicts that lineages grow larger over evolutionary time. Will, Pablos and Stock (2017) "
   f"found a significant positive association between hominin body size and time but qualified it "
   f"heavily, and {_pl('stibel2023body')} found the trend cubic rather than directional and stated "
   f"its results do not support the rule. Bergmann's and Allen's rules, which concern climate rather "
   f"than time, fit humans considerably better. None of the three is about brain size. "
-  f"<a href=\"size-rules.html\">More on the size rules</a></p>"),
+  f"<a href=\"biological-rules.html\">More on the biological rules</a></p>"),
  ("What is cognitive offloading?",
   f"<p>Storing or processing information outside the brain, in symbols, writing, tools, other people, "
   f"or now digital systems. Risko and Gilbert (2016) define the field. In this literature it is "
@@ -1306,7 +1303,7 @@ GLOSS = [
   "appearing from roughly 300,000 years ago."),
  ("Bergmann's rule", "The observation that body mass in endothermic species tends to be larger in "
   "colder climates, a thermoregulatory principle underlying climate explanations of size change. "
-  "Holds broadly in humans, with real exceptions. See the size rules page."),
+  "Holds broadly in humans, with real exceptions. See the biological rules page."),
  ("Change-point analysis", "A statistical method locating where a trend shifts. The 2021 paper used it "
   "to place a brain size reduction at ~3,000 BP; the 2022 critique argued the estimate was distorted "
   "by an over-represented modern sample."),
@@ -1316,7 +1313,7 @@ GLOSS = [
   "reducing surface area relative to volume. Concerns proportion rather than mass, and survives "
   "scrutiny in humans somewhat better than Bergmann's rule does."),
  ("Cope's rule", "The tendency of evolutionary lineages to increase in body size over time. It does "
-  "not describe the recent human record well. See the size rules page."),
+  "not describe the recent human record well. See the biological rules page."),
  ("Cranial capacity", "The internal volume of the braincase, in cubic centimetres. What fossils "
   "preserve, and hence the basis of most of this literature. Converted to brain mass via "
   "mass = 1.147 × capacity^0.976."),
@@ -1471,18 +1468,19 @@ def build():
     write("llms-full.txt", "\n".join(full))
 
     # Preserve the former Cope's rule URL: canonical redirect, not a 404.
-    write("copes-rule.html",
+    for _old in ("copes-rule.html", "size-rules.html"):
+        write(_old,
           '<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
           '<meta name="viewport" content="width=device-width,initial-scale=1">\n'
           "<title>Cope's rule in humans &mdash; moved</title>\n"
           '<meta name="description" content="This page has moved. Cope&#39;s rule in humans is '
           'now covered alongside Bergmann&#39;s and Allen&#39;s rules.">\n'
-          f'<link rel="canonical" href="{BASE}/size-rules.html">\n'
-          '<meta http-equiv="refresh" content="0; url=size-rules.html">\n'
+          f'<link rel="canonical" href="{BASE}/biological-rules.html">\n'
+          '<meta http-equiv="refresh" content="0; url=biological-rules.html">\n'
           '<meta name="robots" content="noindex,follow">\n'
           "</head>\n<body>\n<h1>This page has moved</h1>\n"
           '<p>Cope&rsquo;s rule in humans is now covered at '
-          '<a href="size-rules.html">Bergmann&rsquo;s, Allen&rsquo;s and Cope&rsquo;s rules in '
+          '<a href="biological-rules.html">Bergmann&rsquo;s, Allen&rsquo;s and Cope&rsquo;s rules in '
           "humans</a>.</p>\n</body>\n</html>\n")
 
     urls = "".join(f"  <url><loc>{BASE}/{u}</loc><lastmod>2026-08-15</lastmod>"

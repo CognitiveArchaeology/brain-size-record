@@ -31,7 +31,7 @@ NAV = [
     ("cognition.html", "Cognition"),
     ("cognitive-offloading.html", "Offloading"),
     ("self-domestication.html", "Domestication"),
-    ("size-rules.html", "Size rules"),
+    ("biological-rules.html", "Biological rules"),
     ("papers.html", "Sources"),
     ("questions.html", "Questions"),
     ("glossary.html", "Glossary"),
