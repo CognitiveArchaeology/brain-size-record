@@ -1473,12 +1473,17 @@ def build():
     # Preserve the former Cope's rule URL: canonical redirect, not a 404.
     write("copes-rule.html",
           '<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
+          '<meta name="viewport" content="width=device-width,initial-scale=1">\n'
+          "<title>Cope's rule in humans &mdash; moved</title>\n"
+          '<meta name="description" content="This page has moved. Cope&#39;s rule in humans is '
+          'now covered alongside Bergmann&#39;s and Allen&#39;s rules.">\n'
           f'<link rel="canonical" href="{BASE}/size-rules.html">\n'
           '<meta http-equiv="refresh" content="0; url=size-rules.html">\n'
           '<meta name="robots" content="noindex,follow">\n'
-          "<title>Cope's rule in humans</title>\n</head>\n<body>\n"
-          '<p>This page has moved to <a href="size-rules.html">Bergmann\'s, Allen\'s and '
-          "Cope's rules in humans</a>.</p>\n</body>\n</html>\n")
+          "</head>\n<body>\n<h1>This page has moved</h1>\n"
+          '<p>Cope&rsquo;s rule in humans is now covered at '
+          '<a href="size-rules.html">Bergmann&rsquo;s, Allen&rsquo;s and Cope&rsquo;s rules in '
+          "humans</a>.</p>\n</body>\n</html>\n")
 
     urls = "".join(f"  <url><loc>{BASE}/{u}</loc><lastmod>2026-08-15</lastmod>"
                    f"<priority>{'1.0' if u=='index.html' else ('0.9' if u=='the-debate.html' else '0.7')}</priority></url>\n"
