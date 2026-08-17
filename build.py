@@ -11,12 +11,13 @@ Design constraints:
   - Self-contained: no external CSS/JS/font requests. Works offline, loads
     instantly, and gives crawlers nothing to fail on.
 """
-import os, json, html, shutil
+import os, re, json, html, shutil
 from papers import PAPERS, CORE_FIVE, CONTEXT_PAPERS, citation
 
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "site")
 SITE_NAME = "The Human Brain Size Record"
-TAGLINE = "A sourced reference on what is known, disputed, and unresolved about changes in human brain size."
+TAGLINE = ("A sourced reference on what is known, disputed, and unresolved about evolutionary "
+           "changes in human brain size.")
 # Origin for canonical URLs and the sitemap. Set by the GitHub Pages workflow
 # at build time; falls back to a placeholder for local builds.
 BASE = os.environ.get("SITE_BASE", "https://example.org").rstrip("/")
@@ -170,13 +171,7 @@ def shell(active, title, desc, body, extra_ld=None, path=None):
 {body}
 </div></main>
 <footer class="site"><div class="wrap">
-<p><strong>About this resource.</strong> A non-commercial reference on the human brain size
-literature, reporting what each study found, what its authors said its limits were, and
-where researchers disagree. Every figure traces to a primary source. Method and sourcing
-standards are on the <a href="{pre}about.html">about page</a>.</p>
-<p>Primary sources are linked directly. Two of the studies summarised here are published
-under a non-commercial licence, so this resource carries no advertising, no tracking and
-no sponsorship, and never will.</p>
+<p>Method and source information can be found on the <a href="{pre}about.html">about page</a>.</p>
 <p>Last reviewed 15 August 2026. Corrections are welcome and are listed on the about page.</p>
 </div></footer>
 </body></html>"""
@@ -237,16 +232,21 @@ def article_ld(title, desc, path):
     }
 
 
+def _plain(s):
+    """Strip all markup so schema.org answers are clean text."""
+    s = re.sub(r"</p>", " ", s)
+    s = re.sub(r"<[^>]+>", "", s)
+    s = html.unescape(s)
+    return re.sub(r"\s+", " ", s).strip()
+
+
 def faq_ld(qas):
     return {
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
             {"@type": "Question", "name": q,
-             "acceptedAnswer": {"@type": "Answer",
-                                "text": html.unescape(a.replace("<p>", "").replace("</p>", " ")
-                                                      .replace("<strong>", "").replace("</strong>", "")
-                                                      .replace("<em>", "").replace("</em>", "")).strip()}}
+             "acceptedAnswer": {"@type": "Answer", "text": _plain(a)}}
             for q, a in qas],
     }
 

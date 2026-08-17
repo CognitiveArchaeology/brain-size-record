@@ -115,7 +115,7 @@ PAPERS = {
         "key": "stibel2023body",
         "slug": "stibel-2023-body-size-proportionality",
         "title": "Climate Change Predictive of Body Size and Proportionality in Humans",
-        "authors": ["Jeffrey M. Stibel"],
+        "authors": ["Jeff Morgan Stibel"],
         "author_short": "Stibel",
         "journal": "Evolutionary Biology",
         "volume": "50", "issue": "4", "pages": "461–475", "year": 2023,
@@ -216,7 +216,7 @@ PAPERS = {
         "key": "stibel2025",
         "slug": "stibel-2025-brain-size-extinction-risk",
         "title": "Did increasing brain size place early humans at risk of extinction?",
-        "authors": ["Jeffrey M. Stibel"],
+        "authors": ["Jeff Morgan Stibel"],
         "author_short": "Stibel",
         "journal": "Brain and Cognition",
         "volume": "188", "pages": "106336", "year": 2025,
@@ -642,7 +642,7 @@ LIT = {
    "smaller brains and shorter faces."),
  "kruska2005": ("Kruska, D.C.T. (2005). On the evolutionary significance of encephalization in some "
    "eutherian mammals. <em>Brain, Behavior and Evolution</em> 65(2), 73&ndash;108.", "10.1159/000082979",
-   "Domesticated mammals show brain size reductions of roughly 8 to 30 per cent, and returning them to "
+   "Domesticated mammals show brain size reductions of roughly 8 to 30 percent, and returning them to "
    "the wild does not restore it."),
  "sanchez2019": ("S&aacute;nchez-Villagra, M.R. &amp; van Schaik, C.P. (2019). Evaluating the "
    "self-domestication hypothesis of human evolution. <em>Evolutionary Anthropology</em> 28(3), "
@@ -687,4 +687,29 @@ def lit(key, note=False):
         out += f' <a href="https://doi.org/{doi}">doi:{doi}</a>'
     if note:
         out += f" {n}"
+    return out
+
+
+def src(key, pre=""):
+    """Render a PAPERS entry for an on-page source list, linked to its own page."""
+    p = PAPERS[key]
+    a = p["authors"]
+    if len(a) == 1:
+        names = a[0]
+    elif len(a) <= 3:
+        names = ", ".join(a[:-1]) + " &amp; " + a[-1]
+    else:
+        names = a[0] + " et al."
+    out = f'{names} ({p["year"]}). <a href="{pre}papers/{p["slug"]}.html">{p["title"]}</a>.'
+    if p.get("journal"):
+        j = f' <em>{p["journal"]}</em>'
+        if p.get("volume"):
+            j += f' {p["volume"]}'
+            if p.get("issue"):
+                j += f'({p["issue"]})'
+        if p.get("pages"):
+            j += f', {p["pages"]}'
+        out += j + "."
+    if p.get("doi"):
+        out += f' <a href="https://doi.org/{p["doi"]}">doi:{p["doi"]}</a>'
     return out
