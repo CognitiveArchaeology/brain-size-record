@@ -138,6 +138,7 @@ def head(title, desc, path, extra_ld=None):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="google-site-verification" content="OkI1MnY1WuEoS9lZIsAmhNXJIT5qlIuRPMA9zmg3LoA">
 <title>{html.escape(full)}</title>
 <meta name="description" content="{html.escape(desc)}">
 <link rel="canonical" href="{BASE}/{path}">

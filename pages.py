@@ -17,10 +17,11 @@ def page_index():
 
 <div class="answer">
 <p><strong>Over evolutionary time, most of the evidence says the human brain has recently shrunk by
-a surprising amount.</strong> Brain size in <em>Homo</em> roughly tripled across the Pleistocene,
-stopped growing around 300,000 years ago, and declined during the Holocene by something on the order
-of 5 to 10 percent. The size of that decline, its timing, and its cause are all argued over, and a
-2022 reanalysis found no statistically supported reduction at all.</p>
+a surprising amount.</strong> Endocranial volume roughly tripled across the hominin lineage and
+roughly doubled within <em>Homo</em>, stopped growing around 300,000 years ago, and declined during
+the Holocene by something on the order of 5 to 10 percent. The size of that decline, its timing and
+its cause are all argued over, and a 2022 reanalysis found no statistically supported reduction at
+all.</p>
 </div>
 
 <p class="upd">Reviewed 15 August 2026</p>
@@ -52,9 +53,12 @@ controlled. <a href="timeline.html">The full chronology</a> sets these against e
 <tr><td>Is a Holocene reduction statistically supported?</td>
 <td>Yes, on most published datasets.
 <a href="papers/{P['villmoare2022']['slug']}.html">Villmoare and Grabowski's (2022)</a> analysis is
-an outlier and found no significant change point, arguing the effect comes from uneven sampling.
-That was later contested and revised by
-<a href="papers/{P['desilva2023']['slug']}.html">DeSilva et al. (2023)</a>.</td></tr>
+the only published analysis to find no significant change point, arguing the effect comes from
+uneven sampling. That was contested by
+<a href="papers/{P['desilva2023']['slug']}.html">DeSilva et al. (2023)</a>, who corrected their
+dataset and reaffirmed the decline, and again by
+<a href="papers/{P['decaro2024']['slug']}.html">De Caro (2024)</a>, who rebuilt the modern reference
+value and confirmed a reduction.</td></tr>
 <tr><td>What is the modern human average?</td>
 <td>Estimates run from about 1,297 cc to 1,460 cc, depending on which population was measured and
 by whom.</td></tr>
@@ -125,6 +129,16 @@ values are used as the endpoint in every fossil comparison, so a secular trend i
 directly into estimates of how much the brain has declined. It is a reason to treat the modern
 number carefully.</p>
 
+<h2>What this does not show</h2>
+
+<div class="note"><span class="lbl">Frequently misstated</span>
+<p>Smaller does not mean less capable. Within living humans, brain volume and measured intelligence
+correlate somewhere between r = .19 and r = .40 depending on sample and measurement quality, which
+leaves most variance unexplained either way. Neanderthals had larger brains than living humans.
+Measured cognitive performance rose by roughly three IQ points per decade through the twentieth
+century, and Norwegian conscript data show that rise and its later reversal are both environmental.
+<a href="cognition.html">More on brain size and cognition</a></p></div>
+
 <h3>Sources on this page</h3>
 <ul class="lit">
 <li>{src('desilva2023')}</li>
@@ -136,6 +150,7 @@ number carefully.</p>
 <li>{lit('henneberg1988')}</li>
 <li>{lit('hennebergsteyn1993')}</li>
 <li>{lit('ruff1997')}</li>
+<li>{lit('roberts1953')}</li>
 <li>{lit('neubauer2018')}</li>
 <li>{lit('logan2018')}</li>
 <li>{lit('kuzawa2014')}</li>
@@ -146,16 +161,6 @@ number carefully.</p>
 <li>{lit('jantz2016')}</li>
 <li>{lit('decarli2024')}</li>
 </ul>
-
-<h2>What this does not show</h2>
-
-<div class="note"><span class="lbl">Frequently misstated</span>
-<p>Smaller does not mean less capable. Within living humans, brain volume and measured intelligence
-correlate somewhere between r = .19 and r = .40 depending on sample and measurement quality, which
-leaves most variance unexplained either way. Neanderthals had larger brains than living humans.
-Measured cognitive performance rose by roughly three IQ points per decade through the twentieth
-century, and Norwegian conscript data show that rise and its later reversal are both environmental.
-<a href="cognition.html">More on brain size and cognition</a></p></div>
 """
     return write("index.html", shell("index.html", SITE_NAME, d, body,
                                      [article_ld("Has the human brain gotten smaller?", d, "index.html")]))
@@ -221,8 +226,9 @@ dataset is skewed toward modern specimens, which may pull the change point too r
 obscure earlier ones. Four juvenile Neanderthal specimens and a duplicate entry were removed, as was
 the Morton Collection. Removing it did not appreciably change the modern estimate.</p>
 <p>Maintained: across 19 published studies spanning about 90 years the average reported decrease is
-8.5%, and the Pleistocene-Holocene difference remains significant across three separate modern
-reference datasets totalling close to 9,000 individuals. The title concedes the timing question. The
+8.5%, and the Pleistocene-Holocene difference remains significant when tested against two independent
+modern reference datasets (Dekaban and Sadowsky, n = 3,399; Beals et al., n = 5,288) as well as their
+own sample. The title concedes the timing question. The
 authors' position becomes that a reduction occurred, that its date is uncertain across roughly
 5,000 to 3,000 BP, and that the question warrants more work.</p>
 </div>
@@ -230,8 +236,21 @@ authors' position becomes that a reduction occurred, that its date is uncertain 
 <div class="round r4">
 <span class="yr">2024</span>
 <h3><a href="papers/{P['decaro2024']['slug']}.html">De Caro</a></h3>
-<p>A published commentary in the same journal, evidence that the question remained open in the
-literature after the press cycle had concluded.</p>
+<p>The round almost no coverage mentions, and the one that moves the argument furthest. De Caro
+rebuilt the modern reference value from four sex-balanced datasets totalling 10,363 individuals and
+got 1,341 &plusmn; 130 cc, close to DeSilva et al.'s 1,345 cc and well above the 1,297 cc figure
+Villmoare and Grabowski had objected to. That removes the arithmetic objection.</p>
+<p>He then found a sampling defect neither earlier paper caught. The 25 crania from Afalou, Algeria,
+dated around 11.5 ka, are strongly male-biased, roughly 20 males to 5 females, and make up about 9%
+of the <em>H. sapiens</em> data older than 1 ka. With that subset discarded the reduction across
+5 ka to 0.15 ka still holds, and De Caro writes that his analysis "confirms the result of DeSilva
+et al. (2021, 2023) of an endocranial volume reduction during the last 3&ndash;5 ka."</p>
+<p>His disagreement is about timing rather than existence. A log-age fit of the <em>H. sapiens</em>
+means returns an adjusted R&sup2; of 0.98 and implies the decline has been continuous since at least
+the Late Pleistocene, and possibly since the species originated around 300 ka, rather than starting
+at 3&ndash;5 ka. He also quantifies how thin the signal is: about 50 cc of reduction per log-decade
+against a within-species range of roughly 1,000 cc, so around 95% of the scatter in the data is
+natural variability and only about 5% is time.</p>
 </div>
 
 <h2>What the wider literature adds</h2>
@@ -316,6 +335,7 @@ the prehistoric trend occurred.</li>
 <li>{lit('hennebergsteyn1993')}</li>
 <li>{lit('beals1984')}</li>
 <li>{lit('ruff1997')}</li>
+<li>{lit('roberts1953')}</li>
 <li>{lit('neubauer2018')}</li>
 <li>{lit('du2018')}</li>
 <li>{lit('miller1977')}</li>
@@ -336,8 +356,9 @@ def page_timeline():
 <h1>Timeline of brain size in <em>Homo</em></h1>
 
 <div class="answer">
-<p><strong>Brain size in <em>Homo</em> roughly tripled, then stopped.</strong> Expansion dominates the
-Early and Middle Pleistocene. Growth flattens around 300,000 years ago. Late Pleistocene humans and
+<p><strong>Brain size expanded, then stopped.</strong> Endocranial volume roughly tripled across the
+hominin lineage from australopith values near 445 cc, and roughly doubled within <em>Homo</em> from
+early values near 683 cc. Expansion dominates the Early and Middle Pleistocene. Growth flattens around 300,000 years ago. Late Pleistocene humans and
 Neanderthals converge near 1,460 cc. Modern averages sit near 1,300–1,350 cc, a gap whose
 interpretation is the subject of the current dispute.</p>
 </div>
@@ -471,8 +492,9 @@ in humans only across latitude ranges greater than about 50 degrees, and that ea
 hemisphere-biased samples. Wells (2012) reported that the cline may run through fat rather than lean
 mass, with Polynesian populations contradicting every trend. Savell, Auerbach and Roseman (2016) used
 quantitative genetic modelling to show that some limb clines are correlated side effects rather than
-adaptations, and concluded that group mean differences are poor evidence of adaptation. Riemer and
-colleagues found no consistent mass-temperature relationship across endotherms generally.</p>
+adaptations, and concluded that group mean differences are poor evidence of adaptation. Riemer,
+Guralnick and White (2018) found no consistent mass-temperature relationship across endotherms
+generally, in a sample of 952 bird and mammal species.</p>
 
 <h2>Climate and size in the fossil record</h2>
 
@@ -481,15 +503,15 @@ converge are worth as much as the places they do not.</p>
 
 <p><a href="papers/{P['stibel2023body']['slug']}.html">Stibel (2023, <em>Evolutionary Biology</em>)</a>
 tested five paleoclimate records against body size in 247 <em>Homo</em> specimens across 700,000
-years. Body mass averages 66.40 kg in cooler periods against 59.00 kg in warmer ones, an 11.8 percent
-difference, with proportions shifting toward more linear builds in heat. Stature alone shows no
-significant difference.</p>
+years. Body mass averages 66.40 kg in cooler periods against 59.00 kg in warmer ones, a difference
+the paper reports as 11.8 percent, with proportions shifting toward more linear builds in heat.
+Stature alone shows no significant difference.</p>
 
 <p><a href="papers/{P['stibel2023climate']['slug']}.html">Stibel (2023, <em>Brain, Behavior and
 Evolution</em>)</a> ran the equivalent test on cranial capacity in 298 <em>Homo</em> specimens over
 50,000 years. Brain size correlates inversely with temperature at r = &minus;0.362, holding after
 controls for geography, sex and taxon. Cooler-period specimens average 1,426 g against 1,281 g in
-warmer periods, about 10.7 percent. The signal appears to begin roughly 15,000 years ago. Humidity is
+warmer periods, a difference the paper reports as 10.7 percent. The signal appears to begin roughly 15,000 years ago. Humidity is
 a weaker predictor and precipitation is not significant.</p>
 
 <p><a href="papers/{P['will2021']['slug']}.html">Will, Krapp, Stock and Manica (2021)</a>, in
@@ -525,11 +547,13 @@ direction is upward.</p>
 <li>{src('stibel2023climate')}</li>
 <li>{src('stibel2023body')}</li>
 <li>{src('will2021')}</li>
+<li>{lit('roberts1953')}</li>
 <li>{lit('ruff1994')}</li>
 <li>{lit('katzmarzyk1998')}</li>
 <li>{lit('foster2013')}</li>
 <li>{lit('wells2012')}</li>
 <li>{lit('savell2016')}</li>
+<li>{lit('riemer2018')}</li>
 <li>{lit('ruff1997')}</li>
 <li>{lit('jantz2016')}</li>
 </ul>
@@ -591,9 +615,8 @@ Ponderal Index were not significant, and the shape effect may be an artefact of 
 effect. The finding is also flagged as having a taxonomic implication: because morphology is used to
 classify within <em>Homo</em>, some species boundaries may partly reflect climatic period.</p>
 
-<p>That last point has independent support. Will and Stock found no simple geographic or chronological
-trend in early <em>Homo</em> body size across 39 postcranial specimens, and Monson, Weitz and Brasil
-recently found <em>H. floresiensis</em> and <em>H. naledi</em> endocranial volumes fall where their
+<p>That last point has independent support. Will and Stock (2015) found no simple geographic or
+chronological trend in early <em>Homo</em> body size across 39 postcranial specimens, and Monson, Weitz and Brasil (2026) found <em>H. floresiensis</em> and <em>H. naledi</em> endocranial volumes fall where their
 body sizes predict given the <em>Homo</em> scaling relationship, rather than being anomalously small.</p>
 
 <h2>What is left to explain</h2>
@@ -610,6 +633,7 @@ remains unexplained by any published mechanism, which is the gap the
 <li>{src('stibel2021')}</li>
 <li>{src('stibel2023body')}</li>
 <li>{src('will2021')}</li>
+<li>{lit('willstock2016')}</li>
 <li>{lit('ruff1997')}</li>
 <li>{lit('ruff1994')}</li>
 <li>{lit('monson2026')}</li>
@@ -629,10 +653,11 @@ def page_cognition():
 <h1>Brain size and cognitive ability</h1>
 
 <div class="answer">
-<p><strong>The correlation is real, weak, and contested in both directions.</strong> Meta-analyses put
-brain volume against measured intelligence somewhere between r = .24 and r = .40 depending on sample
-quality, which leaves most variance unexplained either way. Neanderthals had larger brains than living
-humans. Measured cognitive performance rose sharply through the twentieth century.</p>
+<p><strong>The correlation is real, weak, and contested in both directions.</strong> Pooled estimates
+run from r = .24 (Pietschnig et al., 88 studies) to r = .31 (Gignac and Bates, reanalysing the same
+data), with the largest single study, Nave et al. at n = 13,608, giving r = .19. All of them leave
+most variance unexplained. Neanderthals had larger brains than living humans, and measured cognitive
+performance rose sharply through the twentieth century.</p>
 </div>
 
 <h2>How large is the association</h2>
@@ -908,8 +933,9 @@ def page_selfdom():
 <h1>Self-domestication</h1>
 
 <div class="answer">
-<p><strong>Domestication reduces brain size across mammals by 8 to 30 percent.</strong> Humans show
-some of the same skeletal changes over the same period their crania were reducing. Whether that
+<p><strong>Across the domesticated eutherian lineages Kruska reviewed, brain size is reduced by
+roughly 8 to 30 percent relative to wild ancestors.</strong> Humans show some of the same skeletal
+changes over the same period their crania were reducing. Whether that
 reflects an equivalent process, or a coincidence of separate causes, is actively disputed.</p>
 </div>
 
@@ -917,17 +943,17 @@ reflects an equivalent process, or a coincidence of separate causes, is actively
 
 <p>Kruska's review across eutherian mammals found brain size reductions of roughly 8 to 30 percent in
 domesticated lineages, and, importantly, that returning animals to the wild does not restore wild-type
-brain size. Balcarcel and colleagues found the reduction in cattle scales with the intensity of human
+brain size. Balcarcel et al. (2021) found the reduction in cattle scales with the intensity of human
 contact, with dairy breeds most reduced and fighting bulls least.</p>
 
-<p>Wilkins, Wrangham and Fitch proposed a developmental mechanism in 2014: mild neural crest cell
+<p>Wilkins, Wrangham and Fitch (2014) proposed a developmental mechanism: mild neural crest cell
 deficits, selected for indirectly through tameness, produce the whole domestication syndrome including
 smaller brains, shorter faces and reduced pigmentation.</p>
 
 <h2>The human case</h2>
 
-<p>Cieri and colleagues documented brow ridge reduction and upper facial shortening from the Middle
-Pleistocene to recent humans, and argued this reflects selection for social tolerance. Hare's
+<p>Cieri et al. (2014) documented brow ridge reduction and upper facial shortening from the Middle
+Pleistocene to recent humans, and argued this reflects selection for social tolerance. Hare's (2017)
 "survival of the friendliest" account develops the case that selection for prosociality drove a
 domestication-like syndrome in <em>H. sapiens</em>. On this reading the cranial reduction of the last
 tens of thousands of years is a by-product of becoming a more cooperative species, not a response to
@@ -935,18 +961,16 @@ climate or a consequence of offloading.</p>
 
 <h2>Why it is contested</h2>
 
-<p>Sánchez-Villagra and van Schaik reviewed the human application directly in 2019 and concluded the
+<p>Sánchez-Villagra and van Schaik (2019) reviewed the human application directly and concluded the
 evidence that humans display the domestication trait set is weaker and more equivocal than the popular
 framing suggests.</p>
 
-<p>The underlying mechanism has also come under pressure. Johnsson, Henriksen and Wright argued in
-2021 that the neural crest hypothesis does not provide a unified explanation for domestication;
-Wilkins, Wrangham and Fitch published a reply in the same issue. Lord and colleagues showed that the
+<p>The underlying mechanism has also come under pressure. Johnsson, Henriksen and Wright (2021) argued that the neural crest hypothesis does not provide a unified explanation for domestication;
+Wilkins, Wrangham and Fitch published a reply in the same issue. Lord et al. (2020) showed that the
 Russian farm-fox experiment, the empirical keystone of the whole framework, used founders already bred
-in captivity for decades, which undercuts its status as a clean demonstration. Gleeson and Wilson have
-proposed a third account based on shared reproductive disruption.</p>
+in captivity for decades, which undercuts its status as a clean demonstration. Gleeson and Wilson (2023) have proposed a third account based on shared reproductive disruption.</p>
 
-<p>Leach offered an alternative that requires no domestication analogy at all: the dietary, activity
+<p>Leach (2003) offered an alternative that requires no domestication analogy at all: the dietary, activity
 and shelter changes of sedentism are sufficient to produce gracilization, and those changes coincide
 with the Holocene period in question.</p>
 
@@ -961,7 +985,12 @@ is smaller than reported, or absent.</p>
 <h3>Sources on this page</h3>
 <ul class="lit">
 <li>{lit('kruska2005')}</li>
+<li>{lit('balcarcel2021')}</li>
 <li>{lit('wilkins2014')}</li>
+<li>{lit('johnsson2021')}</li>
+<li>{lit('wilkins2021reply')}</li>
+<li>{lit('lord2020')}</li>
+<li>{lit('gleeson2023')}</li>
 <li>{lit('cieri2014')}</li>
 <li>{lit('hare2017')}</li>
 <li>{lit('sanchez2019')}</li>
@@ -1100,7 +1129,8 @@ QAS = [
   f"neuroanatomy.</p>"),
  ("Did human bodies get smaller too?",
   f"<p>Yes, and this matters for interpreting brain data. {_pl('stibel2023body')} finds that across "
-  f"247 specimens and 700,000 years, body mass averages 11.8% lower in warmer periods. Body "
+  f"247 specimens and 700,000 years, body mass in warmer periods is lower by a margin the paper "
+  f"reports as 11.8%. Body "
   f"proportions shift as well, toward more linear builds in heat. Stature specifically shows no "
   f"significant climate response, so the effect is on mass and shape rather than height. "
   f"{_pl('will2021')} independently found temperature a major predictor of body size across a million "
@@ -1218,8 +1248,9 @@ def page_paper(key):
 
 # =========================================================== 10. GLOSSARY
 GLOSS = [
- ("Allometry", "How a trait scales with body size. Brain mass scales predictably with body mass across "
-  "mammals, so a brain that shrinks in proportion to its body has not changed in any meaningful sense."),
+ ("Allometry", "How a trait scales with body size. Because brain mass scales predictably with body "
+  "mass across mammals, a brain size change has to be assessed against body size change over the same "
+  "period before any part of it can be attributed to selection on the brain itself."),
  ("Anatomically modern Homo", "Populations with skeletal features within the modern human range, "
   "appearing from roughly 300,000 years ago."),
  ("Bergmann's rule", "The observation that body mass in endothermic species tends to be larger in "

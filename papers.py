@@ -337,17 +337,33 @@ PAPERS = {
         "authors": ["Liberato De Caro"],
         "author_short": "De Caro",
         "journal": "Frontiers in Ecology and Evolution",
+        "volume": "12", "pages": "1368347",
         "year": 2024,
         "doi": "10.3389/fevo.2024.1368347",
         "url": "https://www.frontiersin.org/journals/ecology-and-evolution/articles/10.3389/fevo.2024.1368347/full",
         "license": "CC BY 4.0", "license_url": "https://creativecommons.org/licenses/by/4.0/",
         "oa": "Gold open access",
         "dates": "Published 11 April 2024",
-        "type": "Commentary",
-        "role": "Round 4. A published commentary responding to the 2023 paper, the most recent entry in the exchange.",
+        "type": "General commentary",
+        "role": ("Round 4. Re-examines the DeSilva dataset for sex-representation bias, rebuilds the "
+                 "modern reference value, and reaches a conclusion that supports neither side "
+                 "cleanly: the reduction is real, but it is older and slower than a change point at "
+                 "3&ndash;5 ka implies."),
         "abstract": "",
-        "findings": [],
-        "limitations": [],
+        "findings": [
+            "Rebuilds the modern reference value from four sex-balanced datasets (Dekaban &amp; Sadowsky n = 3,399; Ho et al. n = 1,261; Beals et al. n = 5,288; plus DeSilva's n = 415), giving <strong>1,341 &plusmn; 130 cc across n = 10,363</strong>. This addresses the objection Villmoare &amp; Grabowski raised against the 1,297 cc figure, and lands close to DeSilva et al.'s own 1,345 cc.",
+            "Identifies a specific sampling defect neither earlier paper caught: the 25 crania from Afalou, Algeria (dated ~11.5 ka) are strongly male-biased, estimated at roughly 20 males to 5 females, and represent about 9% of the <em>H. sapiens</em> data older than 1 ka. De Caro argues this subset should be discarded.",
+            "With that subset removed, the reduction across the 5 ka &ge; age &gt; 0.15 ka interval still holds. De Caro writes that the analysis &ldquo;confirms the result of DeSilva et al. (2021, 2023) of an endocranial volume reduction during the last 3&ndash;5 ka.&rdquo;",
+            "But he disputes the timing: a log-age linear fit of the <em>H. sapiens</em> means gives an adjusted R&sup2; of 0.98 and implies reduction has been continuous since at least the Late Pleistocene, and probably since the species' origin around 300 ka, rather than beginning at 3&ndash;5 ka.",
+            "Quantifies how little of the scatter is temporal: the fit implies a decrease of roughly <strong>50 cc per log-decade</strong> against a within-species range spanning about 1,000 cc, so approximately <strong>95% of the variance is natural variability</strong> and only about 5% is time evolution.",
+            "Notes that <em>H. sapiens</em> appears to run counter to the trend in other hominin species, whose mean endocranial volumes increase over the same span.",
+        ],
+        "limitations": [
+            "The sex-balance inference for the Afalou sample is estimated from the shape of a histogram rather than from independent osteological sexing.",
+            "The analysis works from means rather than individual specimens for the main fit, a choice De Caro defends as standard timeseries practice but which discards within-interval information.",
+            "The reanalysis uses the DeSilva et al. (2023) dataset throughout and inherits its coverage gaps; De Caro calls for extension to datasets not considered there.",
+        ],
+        "lim_heading": "Limitations of this reanalysis",
     },
 
     "hawks2011": {
@@ -382,10 +398,17 @@ PAPERS = {
         "license": "All rights reserved", "license_url": "",
         "oa": "Paywalled",
         "type": "Original research",
-        "role": "The roughly 90-year-old observational baseline that both sides of the modern dispute invoke.",
+        "role": "The 1988 observational baseline that both sides of the modern dispute invoke.",
+        "findings": [
+            "Reports a decrease in cranial capacity from the Mesolithic to modern times, derived from linear measurements on a large European skull series.",
+            "Later extended to a sub-Saharan African sample by Henneberg &amp; Steyn (1993), testing whether the pattern was regional or general.",
+        ],
+        "limitations": [
+            "An erratum was published the following year (<em>Human Biology</em> 61(3), 478, June 1989; recorded on PubMed PMID 3134287). Corrected values should be used. Neither the article nor the erratum has a DOI.",
+            "The series is predominantly European, with limited additions from northwest Africa and west Asia.",
+        ],
+        "lim_heading": "Corrections and coverage",
         "abstract": "",
-        "findings": [],
-        "limitations": [],
     },
 
     "will2021": {
@@ -401,11 +424,12 @@ PAPERS = {
         "license": "CC BY 4.0", "license_url": "https://creativecommons.org/licenses/by/4.0/",
         "oa": "Open access",
         "type": "Original research",
-        "role": "Independent team, convergent question: finds climate a strong predictor of body size in Homo but only a weak and indirect predictor of brain size.",
+        "role": "Tests a wide set of environmental variables against body and brain size across a million years. Finds temperature a strong predictor of body size and only weak, probably indirect predictors of brain size.",
         "abstract": "",
         "findings": [
             "Temperature is a major predictor of body size variation in <em>Homo</em> over the past million years.",
-            "Environmental predictors of <strong>brain</strong> size are weaker and differ from those for body size, the authors find brain size better predicted by non-climatic factors.",
+            "Net primary productivity and long-term variability in precipitation correlate with <strong>brain</strong> size, but explain low amounts of the observed variation.",
+            "The authors conclude that most environmental factors they test &ldquo;do not correspond with body and brain size evolution,&rdquo; and that the brain size relationships they do find are likely indirect.",
         ],
         "limitations": [],
     },
@@ -677,6 +701,49 @@ LIT = {
    "Finds <em>Homo</em> brain-body scaling positively allometric and distinct from the wider primate "
    "slope, with <em>H. floresiensis</em> and <em>H. naledi</em> falling where their body size predicts."),
 }
+
+
+LIT.update({
+ "roberts1953": ("Roberts, D.F. (1953). Body weight, race and climate. <em>American Journal of "
+   "Physical Anthropology</em> 11(4), 533&ndash;558.", "10.1002/ajpa.1330110404",
+   "The original demonstration that human body weight tracks mean annual temperature across "
+   "populations. Every later treatment of Bergmann's rule in humans measures itself against this."),
+ "riemer2018": ("Riemer, K., Guralnick, R.P. &amp; White, E.P. (2018). No general relationship "
+   "between mass and temperature in endothermic species. <em>eLife</em> 7, e27166.",
+   "10.7554/eLife.27166",
+   "Across a large sample of birds and mammals, no consistent mass-temperature relationship. A "
+   "direct challenge to Bergmann's rule as a general law rather than a local pattern."),
+ "willstock2016": ("Will, M. &amp; Stock, J.T. (2015). Spatial and temporal variation of body size "
+   "among early <em>Homo</em>. <em>Journal of Human Evolution</em> 82, 15&ndash;33.",
+   "10.1016/j.jhevol.2015.02.009",
+   "Across 39 postcranial specimens, no simple geographic or chronological trend in early "
+   "<em>Homo</em> body size."),
+ "balcarcel2021": ("Balcarcel, A.M., Veitschegger, K., Clauss, M. &amp; Sánchez-Villagra, M.R. "
+   "(2021). Intensive human contact correlates with smaller brains: differential brain size "
+   "reduction in cattle types. <em>Proceedings of the Royal Society B</em> 288(1952), 20210813.",
+   "10.1098/rspb.2021.0813",
+   "Brain size reduction under domestication scales with the intensity of human contact rather "
+   "than with domestication as a binary state."),
+ "johnsson2021": ("Johnsson, M., Henriksen, R. &amp; Wright, D. (2021). The neural crest cell "
+   "hypothesis: no unified explanation for domestication. <em>Genetics</em> 219(1), iyab097.",
+   "10.1093/genetics/iyab097",
+   "Argues the neural crest hypothesis does not provide a unified explanation for the "
+   "domestication syndrome. Wilkins, Wrangham and Fitch published a reply in the same issue."),
+ "wilkins2021reply": ("Wilkins, A.S., Wrangham, R.W. &amp; Fitch, W.T. (2021). The neural crest/domestication "
+   "syndrome hypothesis, explained: reply to Johnsson, Henriksen, and Wright. <em>Genetics</em> "
+   "219(1), iyab098.", "10.1093/genetics/iyab098",
+   "The authors' response defending the neural crest account against Johnsson and colleagues."),
+ "lord2020": ("Lord, K.A., Larson, G., Coppinger, R.P. &amp; Karlsson, E.K. (2020). The history of "
+   "farm foxes undermines the animal domestication syndrome. <em>Trends in Ecology &amp; "
+   "Evolution</em> 35(2), 125&ndash;136.", "10.1016/j.tree.2019.10.011",
+   "The Russian farm-fox experiment used founders already bred in captivity for decades, which "
+   "undercuts its standing as a clean demonstration of the domestication syndrome."),
+ "gleeson2023": ("Gleeson, B.T. &amp; Wilson, L.A.B. (2023). Shared reproductive disruption, not "
+   "neural crest or tameness, explains the domestication syndrome. <em>Proceedings of the Royal "
+   "Society B</em> 290(1995), 20222464.", "10.1098/rspb.2022.2464",
+   "A third mechanism for the domestication syndrome, independent of both neural crest deficits "
+   "and selection on tameness."),
+})
 
 
 def lit(key, note=False):
