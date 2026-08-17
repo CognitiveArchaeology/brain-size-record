@@ -849,98 +849,142 @@ is smaller than reported, or absent.</p>
                        [article_ld("Self-domestication", d, "self-domestication.html")]))
 
 
-# =========================================================== 7c. COPE'S RULE
-def page_copes():
-    d = ("Cope's rule predicts lineages grow larger over time. It has been tested against hominin "
-         "body size by a small number of studies, and never against hominin brain size.")
+# =========================================================== 7c. SIZE RULES
+def page_rules():
+    d = ("Does Cope's rule apply to humans? Do Bergmann's and Allen's? Humans follow the two "
+         "climate rules reasonably well and Cope's rule barely at all. What the hominin fossil "
+         "record shows for each.")
     body = f"""
-<h1>Cope's rule and the hominin record</h1>
+<h1>Do the size rules apply to humans?</h1>
 
 <div class="answer">
-<p><strong>Contested, for body size. Untested, for brain size.</strong> Three studies have tested
-Cope's rule against hominin body mass. Two find the record partly consistent with it, one finds it
-unsupported, and all three describe a pattern more complicated than a simple trend. No published
-study frames hominin brain size evolution in Cope's rule terms, and this page does not either.</p>
+<p><strong>Two of the three hold up; the third does not.</strong> Bergmann's rule, that bodies are
+larger in cold climates, and Allen's rule, that limbs are shorter, both describe human populations
+reasonably well and have been tested against the fossil record. Cope's rule, that lineages grow
+larger over time, fits the hominin record poorly. None of the three is about brain size.</p>
 </div>
 
-<h2>What the rule says</h2>
+<h2>What the three rules say</h2>
 
-<p>Cope's rule is the observation that lineages tend to increase in body size over evolutionary time.
-It is a statistical tendency rather than a law, and whether it holds depends on the clade, the
-timescale and how species turnover is handled. Montgomery, Capellini, Barton and Mundy (2010) tested
-it across primates and rejected it.</p>
+<table>
+<tr><th>Rule</th><th>Prediction</th><th>How well humans fit</th></tr>
+<tr><td><strong>Bergmann's</strong></td><td>Body mass is greater in colder climates</td>
+<td>Holds broadly, with real exceptions and a disputed mechanism</td></tr>
+<tr><td><strong>Allen's</strong></td><td>Limbs and extremities are shorter in colder climates</td>
+<td>Holds, and is arguably the better supported of the two</td></tr>
+<tr><td><strong>Cope's</strong></td><td>Lineages increase in body size over evolutionary time</td>
+<td>Poorly. Tested three times against hominins, with mixed results</td></tr>
+</table>
 
-<h2>Hominin body size</h2>
+<p>The first two are <em>ecogeographic</em>: they describe variation across space, between populations
+living in different climates. Cope's rule is <em>temporal</em>: it describes change through time
+within a lineage. They answer different questions, which is part of why they can disagree.</p>
+
+<h2>Bergmann's rule</h2>
+
+<p>Roberts (1953) established the basic relationship between body weight and mean annual temperature
+across human populations, and it has been retested repeatedly since. Katzmarzyk and Leonard (1998)
+restudied it across 418 samples and confirmed the association, while noting the slopes had grown
+shallower since Roberts measured them, which they attributed to twentieth-century nutritional change.
+Ruff's (1994) review remains the standard treatment, and identified body <em>breadth</em> rather than
+stature as the dimension climate actually constrains.</p>
+
+<p>It is less firm than its textbook status suggests. Foster and Collard (2013) found it holds in
+humans only across latitude ranges greater than about 50 degrees, and that earlier support drew on
+hemisphere-biased samples. Wells (2012) argued the cline may run through fat rather than lean mass,
+with Polynesian populations contradicting every trend. Savell, Auerbach and Roseman (2016) used
+quantitative genetic modelling to show some limb clines are correlated side effects rather than
+adaptations. And Riemer, Guralnick and White (2018) found no consistent mass-temperature relationship
+across 952 bird and mammal species, which challenges the rule as a general law rather than a local
+pattern.</p>
+
+<h2>Allen's rule</h2>
+
+<p>Allen's rule concerns proportion rather than mass: shorter limbs and extremities reduce surface
+area relative to volume, conserving heat. In humans it shows up as relative sitting height, limb
+length and trunk breadth varying with latitude, and it survives scrutiny somewhat better than
+Bergmann's because proportion is less confounded by nutrition than mass is.</p>
+
+<p><a href="papers/{P['stibel2023body']['slug']}.html">Stibel (2023b)</a> tested both rules against
+deep time rather than across living populations. Across 247 <em>Homo</em> specimens and 700,000
+years, body mass in cooler periods averages 66.40 kg against 59.00 kg in warmer ones, and the
+stature-to-body-mass ratio is 7.09% greater in warmer cycles, rising to 9.89% at 10,000-year
+averaging. Stature alone shows no significant difference. That is the Bergmann and Allen pattern
+holding through time, not just across space. The paper is candid that the proportionality sample is
+small at 87 specimens and skewed toward high-latitude males, and that the shape effect may be an
+artefact of the strong mass effect. <a href="climate.html">More on climate</a></p>
+
+<h2>Cope's rule, and why it fits worst</h2>
+
+<p>Cope's rule is the weakest of the three here, and it is worth being clear about why it gets
+discussed at all: it is the obvious alternative explanation for a size increase through time, so
+ruling it out matters.</p>
 
 <p>Will, Pablos and Stock (2017) assembled 254 body mass and 204 stature estimates from 311 specimens
-spanning 4.4 million years. They find a significant positive association between body size and time,
-which is what Cope's rule predicts, but qualify it heavily. The record contains phases of stasis
-punctuated by rapid increases, a reduction among australopithecines between roughly 3.2 and 2.2 Ma,
-and clear exceptions in <em>H. naledi</em>, <em>H. floresiensis</em> and declining Late Pleistocene
-and Holocene <em>H. sapiens</em>.</p>
-
-<p>Gardner, Püschel, White, Sakamoto and Venditti (2026) revisited the question with 386 specimens
-across 21 taxa and Bayesian phylogenetic modelling. They find strong evidence for marked body mass
-increase in later <em>Homo</em> and moderate support for a general increase across the lineage. A
-correction to this paper was published in August 2026.</p>
+spanning 4.4 million years and found a significant positive association between size and time, which
+is what Cope's rule predicts. They qualified it heavily: phases of stasis punctuated by rapid
+increases, a reduction among australopithecines between roughly 3.2 and 2.2 Ma, and clear exceptions
+in <em>H. naledi</em>, <em>H. floresiensis</em> and declining Holocene <em>H. sapiens</em>. Gardner,
+Püschel, White, Sakamoto and Venditti (2026) revisited it with 386 specimens across 21 taxa and found
+strong evidence for body mass increase in later <em>Homo</em> and moderate support for a general
+increase. A correction to that paper was published in August 2026.</p>
 
 <p><a href="papers/{P['stibel2023body']['slug']}.html">Stibel (2023b)</a> reaches a different
-conclusion from a dataset built to test climate rather than time. Across 247 <em>Homo</em> specimens
-and 700,000 years, body mass does increase over time (<em>p</em> &lt; 0.0001, ANOVA), but the trend
-is cubic rather than directional, and the paper states plainly that its results "do not support
-Cope's rule" because <em>Homo</em> body size "has not consistently increased over time."</p>
+conclusion. Body mass does increase over time (<em>p</em> &lt; 0.0001, ANOVA), but the trend is cubic
+rather than directional, and the paper states that its results "do not support Cope's rule" because
+<em>Homo</em> body size "has not consistently increased over time."</p>
 
-<p>What it offers instead is the more interesting part. Hunt and Roy (2006) proposed a
-<strong>Cope-Bergmann rule</strong>, in which apparent size increase over geological time is really a
-correlated response to time and temperature together rather than a directional trend in its own
-right. Stibel finds support for that reading: models including both time and climate as variables are
-significant at <em>p</em> &lt; 0.0001 across the same 247 specimens. On that account the size
-increase is real but Cope's rule is the wrong explanation for it, because the driver is climate
-rather than any general fitness advantage to being larger.</p>
+<h3>The rule that reconciles them</h3>
 
-<p>So the three studies do not agree. Two read the record as broadly Cope-consistent with heavy
-qualification; the third reads the same direction of change as a climate signal wearing Cope's
-clothing. What all three share is that the pattern is not a clean trend, and that the Holocene runs
-the other way. <a href="climate.html">More on climate</a> ·
-<a href="body-size.html">More on body size</a></p>
+<p>Hunt and Roy (2006) proposed a <strong>Cope-Bergmann rule</strong>: apparent size increase over
+geological time is really a correlated response to time and temperature together, rather than a
+directional trend in its own right. Stibel finds support for that reading, with models including both
+time and climate significant at <em>p</em> &lt; 0.0001 across the same 247 specimens.</p>
 
-<h2>Why brain size is not treated this way</h2>
+<p>On that account the size increase is real, but Cope's rule is the wrong explanation for it. The
+driver is climate, which is Bergmann's territory, rather than any general fitness advantage to being
+larger. That is also why this page treats the three rules together rather than separately: for
+humans, the interesting answer sits between them.</p>
 
-<p>Cope's rule is about body size, and the three studies above keep it there. The hominin brain
-literature uses a different framework entirely, and asks a different question: whether encephalization accumulated within lineages or
-through the replacement of smaller-brained species by larger-brained ones.</p>
+<h2>None of this is about brain size</h2>
+
+<p>All three rules concern the body. The hominin brain literature uses a different framework and asks
+a different question: whether encephalization accumulated within lineages, or through the replacement
+of smaller-brained species by larger-brained ones.</p>
 
 <p>Püschel, Nicholson, Baker, Barton and Venditti (2024) answered that directly. Across 285 specimens
-analysed over 1,000 Bayesian phylogenies, they found a significant within-species effect of time on
-relative brain size and no significant between-species effect. Speciation rate was not a predictor.
+analysed over 1,000 Bayesian phylogenies they found a significant within-species effect of time on
+relative brain size and no significant between-species effect, with speciation rate not a predictor.
 Their conclusion is that hominin brain size macroevolution "seems to be entirely explained by
-micro-evolutionary, population-level processes." The within-species trend also accelerates in more
-recent lineages, correlating with time position at r = 0.74, or 0.9 with Neanderthals excluded.</p>
+micro-evolutionary, population-level processes." The within-species trend accelerates in more recent
+lineages, correlating with time position at r = 0.74, or 0.9 with Neanderthals excluded.</p>
 
-<p>That is a finding about anagenesis versus cladogenesis, not about Cope's rule, and the authors do
-not use the term. The two questions are related, since both concern whether change happens inside
-lineages or between them, but the connection has not been made in print and this page does not make
-it.</p>
+<p>That is a finding about anagenesis versus cladogenesis. It is a related question, since both
+concern whether change happens inside lineages or between them, but no published study frames hominin
+brain size in Cope's rule terms and this page does not either. Montgomery, Capellini, Barton and Mundy
+(2010) tested Cope's rule across primates and rejected it, treating brain size separately from body
+size throughout.</p>
 
 <h2>Scale changes the answer</h2>
 
-<p>Two papers show that conclusions about the pace and pattern of hominin brain size change depend on
-how the data are binned. Du et al. (2018) demonstrated the effect directly. Gingerich (2022)
-synthesised 14 studies into a single endocranial series and recovered four phases: stasis from
+<p>Du et al. (2018) showed that conclusions about the pace and pattern of hominin brain size change
+are scale-dependent: how the data are binned substantially affects what trend appears. Gingerich
+(2022) synthesised 14 studies into a single endocranial series and recovered four phases, stasis from
 roughly 3.2 to 2.0 Ma, increase from 2.0 to 1.5 Ma, stasis from 1.5 to 0.7 Ma, and increase from
-about 0.7 Ma onward. His median step rate of 0.15 standard deviations per generation is close to
-rates measured in living populations, which is a useful check that the fossil rates are not
-anomalous.</p>
+about 0.7 Ma onward. His median step rate of 0.15 standard deviations per generation is close to rates
+measured in living populations, a useful check that the fossil rates are not anomalous.</p>
 
-<p>Any claim that hominins do or do not follow a size trend has to specify the timescale first.</p>
+<p>Any claim that humans do or do not follow a size rule has to specify the timescale first.</p>
 
 <h3>Sources on this page</h3>
-{sources(['willpablos2017', 'gardner2026', 'puschel2024', 'montgomery2010', 'gingerich2022', 'du2018', 'stibel2023body', 'willstock2016'])}
+{sources(['roberts1953', 'ruff1994', 'katzmarzyk1998', 'foster2013', 'wells2012', 'savell2016', 'riemer2018', 'stibel2023body', 'willpablos2017', 'gardner2026', 'puschel2024', 'montgomery2010', 'gingerich2022', 'du2018', 'willstock2016'])}
 """
-    return write("copes-rule.html", shell("copes-rule.html", "Cope's rule and the hominin record",
-                                          d, body,
-                                          [article_ld("Cope's rule and the hominin record", d,
-                                                      "copes-rule.html")]))
+    return write("size-rules.html",
+                 shell("size-rules.html",
+                       "Bergmann's, Allen's and Cope's rules in humans",
+                       d, body,
+                       [article_ld("Do the size rules apply to humans? "
+                                   "Bergmann's, Allen's and Cope's rules", d, "size-rules.html")]))
 
 
 # =========================================================== 8. QUESTIONS
@@ -1051,10 +1095,13 @@ QAS = [
   f"these groups is a poor guide to cognitive capability; Pearce, Stringer and Dunbar (2013) argue "
   f"more of the Neanderthal volume went to vision and body control.</p>"),
  ("Does Cope's rule apply to humans?",
-  f"<p>Cope's rule, the tendency of lineages to increase in body size over time, is not generally "
-  f"applied to the recent human record, and the evidence runs the other way. Both brain "
-  f"({_pl('desilva2023')}) and body size ({_pl('stibel2023body')}) in <em>Homo</em> appear to have "
-  f"decreased over the Holocene, on the analyses that find a decrease at all.</p>"),
+  f"<p>Poorly, and it is the weakest of the three general size rules as applied to humans. Cope's "
+  f"rule predicts that lineages grow larger over evolutionary time. Will, Pablos and Stock (2017) "
+  f"found a significant positive association between hominin body size and time but qualified it "
+  f"heavily, and {_pl('stibel2023body')} found the trend cubic rather than directional and stated "
+  f"its results do not support the rule. Bergmann's and Allen's rules, which concern climate rather "
+  f"than time, fit humans considerably better. None of the three is about brain size. "
+  f"<a href=\"size-rules.html\">More on the size rules</a></p>"),
  ("What is cognitive offloading?",
   f"<p>Storing or processing information outside the brain, in symbols, writing, tools, other people, "
   f"or now digital systems. Risko and Gilbert (2016) define the field. In this literature it is "
@@ -1258,14 +1305,18 @@ GLOSS = [
  ("Anatomically modern Homo", "Populations with skeletal features within the modern human range, "
   "appearing from roughly 300,000 years ago."),
  ("Bergmann's rule", "The observation that body mass in endothermic species tends to be larger in "
-  "colder climates, a thermoregulatory principle underlying climate explanations of size change."),
+  "colder climates, a thermoregulatory principle underlying climate explanations of size change. "
+  "Holds broadly in humans, with real exceptions. See the size rules page."),
  ("Change-point analysis", "A statistical method locating where a trend shifts. The 2021 paper used it "
   "to place a brain size reduction at ~3,000 BP; the 2022 critique argued the estimate was distorted "
   "by an over-represented modern sample."),
  ("Cognitive offloading", "Storing or processing information outside the brain, in symbols, tools, "
   "writing, other people, or digital systems."),
+ ("Allen's rule", "The observation that limbs and extremities are shorter in colder climates, "
+  "reducing surface area relative to volume. Concerns proportion rather than mass, and survives "
+  "scrutiny in humans somewhat better than Bergmann's rule does."),
  ("Cope's rule", "The tendency of evolutionary lineages to increase in body size over time. It does "
-  "not describe the recent human record."),
+  "not describe the recent human record well. See the size rules page."),
  ("Cranial capacity", "The internal volume of the braincase, in cubic centimetres. What fossils "
   "preserve, and hence the basis of most of this literature. Converted to brain mass via "
   "mass = 1.147 × capacity^0.976."),
@@ -1342,10 +1393,6 @@ def page_about():
     d = "Editorial standards, method, and corrections policy for this resource."
     body = """
 <h1>About this resource</h1>
-<div class="answer">
-<p>A non-commercial reference on the human brain size literature. It reports what each study found,
-what its authors said the limits were, and where researchers disagree.</p>
-</div>
 
 <h2>Non-commercial by requirement and by choice</h2>
 <p>Two of the studies summarised here are published under Creative Commons Attribution-NonCommercial
@@ -1367,7 +1414,7 @@ research study referenced herein, it should be assumed that the journal article 
 def build():
     os.makedirs(OUT, exist_ok=True)
     made = [page_index(), page_debate(), page_timeline(), page_climate(), page_body(),
-            page_cognition(), page_offload(), page_selfdom(), page_copes(), page_questions(), page_papers(),
+            page_cognition(), page_offload(), page_selfdom(), page_rules(), page_questions(), page_papers(),
             page_glossary(), page_about()]
     for k in CORE_FIVE + CONTEXT_PAPERS:
         made.append(page_paper(k))
@@ -1422,6 +1469,16 @@ def build():
     for p in ["index.html"] + topic + paper:
         full += [f"\n\n{'=' * 70}\nURL: {BASE}/{p}\n{'=' * 70}\n", _plaintext(p)]
     write("llms-full.txt", "\n".join(full))
+
+    # Preserve the former Cope's rule URL: canonical redirect, not a 404.
+    write("copes-rule.html",
+          '<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
+          f'<link rel="canonical" href="{BASE}/size-rules.html">\n'
+          '<meta http-equiv="refresh" content="0; url=size-rules.html">\n'
+          '<meta name="robots" content="noindex,follow">\n'
+          "<title>Cope's rule in humans</title>\n</head>\n<body>\n"
+          '<p>This page has moved to <a href="size-rules.html">Bergmann\'s, Allen\'s and '
+          "Cope's rules in humans</a>.</p>\n</body>\n</html>\n")
 
     urls = "".join(f"  <url><loc>{BASE}/{u}</loc><lastmod>2026-08-15</lastmod>"
                    f"<priority>{'1.0' if u=='index.html' else ('0.9' if u=='the-debate.html' else '0.7')}</priority></url>\n"
