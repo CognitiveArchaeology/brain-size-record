@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Page content for the reference hub. Run this file to build the site."""
 import os, json, html
-from papers import PAPERS, CORE_FIVE, CONTEXT_PAPERS, citation, LIT, lit, src
+from papers import PAPERS, CORE_FIVE, CONTEXT_PAPERS, citation, LIT, lit, src, sources
 from build import (shell, write, paper_card, lic_pill, scholarly_ld,
                    article_ld, faq_ld, OUT, NAV, BASE, SITE_NAME)
 
@@ -135,27 +135,7 @@ century, and Norwegian conscript data (Bratsberg and Rogeberg 2018) show that ri
 <a href="cognition.html">More on brain size and cognition</a></p></div>
 
 <h3>Sources on this page</h3>
-<ul class="lit">
-<li>{src('desilva2023')}</li>
-<li>{src('stibel2021')}</li>
-<li>{src('stibel2023climate')}</li>
-<li>{src('stibel2023body')}</li>
-<li>{src('stibel2025')}</li>
-<li>{src('villmoare2022')}</li>
-<li>{lit('henneberg1988')}</li>
-<li>{lit('hennebergsteyn1993')}</li>
-<li>{lit('ruff1997')}</li>
-<li>{lit('roberts1953')}</li>
-<li>{lit('neubauer2018')}</li>
-<li>{lit('logan2018')}</li>
-<li>{lit('kuzawa2014')}</li>
-<li>{lit('fonseca2012')}</li>
-<li>{lit('cieri2014')}</li>
-<li>{lit('kruska2005')}</li>
-<li>{lit('miller1977')}</li>
-<li>{lit('jantz2016')}</li>
-<li>{lit('decarli2024')}</li>
-</ul>
+{sources(['desilva2023', 'stibel2021', 'stibel2023climate', 'stibel2023body', 'stibel2025', 'villmoare2022', 'henneberg1988', 'hennebergsteyn1993', 'ruff1997', 'roberts1953', 'neubauer2018', 'logan2018', 'kuzawa2014', 'fonseca2012', 'cieri2014', 'kruska2005', 'miller1977', 'jantz2016', 'decarli2024'])}
 """
     return write("index.html", shell("index.html", SITE_NAME, d, body,
                                      [article_ld("Has the human brain gotten smaller?", d, "index.html")]))
@@ -308,25 +288,7 @@ the prehistoric trend occurred.</li>
 </ul>
 
 <h3>Sources on this page</h3>
-<ul class="lit">
-<li>{src('desilva2021')}</li>
-<li>{src('villmoare2022')}</li>
-<li>{src('desilva2023')}</li>
-<li>{src('decaro2024')}</li>
-<li>{src('stibel2021')}</li>
-<li>{src('stibel2023climate')}</li>
-<li>{src('stibel2025')}</li>
-<li>{lit('henneberg1988')}</li>
-<li>{lit('hennebergsteyn1993')}</li>
-<li>{lit('beals1984')}</li>
-<li>{lit('ruff1997')}</li>
-<li>{lit('roberts1953')}</li>
-<li>{lit('neubauer2018')}</li>
-<li>{lit('du2018')}</li>
-<li>{lit('miller1977')}</li>
-<li>{lit('jantz2016')}</li>
-<li>{lit('decarli2024')}</li>
-</ul>
+{sources(['desilva2021', 'villmoare2022', 'desilva2023', 'decaro2024', 'stibel2021', 'stibel2023climate', 'stibel2025', 'henneberg1988', 'hennebergsteyn1993', 'beals1984', 'ruff1997', 'roberts1953', 'neubauer2018', 'du2018', 'miller1977', 'jantz2016', 'decarli2024'])}
 """
     return write("the-debate.html",
                  shell("the-debate.html", "Did human brains shrink in the Holocene?", d, body,
@@ -423,20 +385,7 @@ The Holocene decline is the only part under active dispute, and it is the part t
 essentially all public attention.</p>
 
 <h3>Sources on this page</h3>
-<ul class="lit">
-<li>{src('desilva2023')}</li>
-<li>{src('desilva2021')}</li>
-<li>{src('villmoare2022')}</li>
-<li>{src('stibel2021')}</li>
-<li>{src('stibel2023climate')}</li>
-<li>{src('stibel2025')}</li>
-<li>{lit('neubauer2018')}</li>
-<li>{lit('du2018')}</li>
-<li>{lit('ruff1997')}</li>
-<li>{lit('miller1977')}</li>
-<li>{lit('jantz2016')}</li>
-<li>{lit('decarli2024')}</li>
-</ul>
+{sources(['desilva2023', 'desilva2021', 'villmoare2022', 'stibel2021', 'stibel2023climate', 'stibel2025', 'neubauer2018', 'du2018', 'ruff1997', 'miller1977', 'jantz2016', 'decarli2024'])}
 """
     return write("timeline.html", shell("timeline.html", "Timeline of brain size in Homo", d, body,
                                         [article_ld("Timeline of brain size in Homo", d, "timeline.html")]))
@@ -527,20 +476,7 @@ through nutrition, disease burden and growth conditions rather than temperature,
 direction is upward.</p>
 
 <h3>Sources on this page</h3>
-<ul class="lit">
-<li>{src('stibel2023climate')}</li>
-<li>{src('stibel2023body')}</li>
-<li>{src('will2021')}</li>
-<li>{lit('roberts1953')}</li>
-<li>{lit('ruff1994')}</li>
-<li>{lit('katzmarzyk1998')}</li>
-<li>{lit('foster2013')}</li>
-<li>{lit('wells2012')}</li>
-<li>{lit('savell2016')}</li>
-<li>{lit('riemer2018')}</li>
-<li>{lit('ruff1997')}</li>
-<li>{lit('jantz2016')}</li>
-</ul>
+{sources(['stibel2023climate', 'stibel2023body', 'will2021', 'roberts1953', 'ruff1994', 'katzmarzyk1998', 'foster2013', 'wells2012', 'savell2016', 'riemer2018', 'ruff1997', 'jantz2016'])}
 """
     return write("climate.html", shell("climate.html", "Climate, body size and brain size", d, body,
                                        [article_ld("Climate, body size and brain size", d, "climate.html")]))
@@ -613,17 +549,7 @@ remains unexplained by any published mechanism, which is the gap the
 <a href="self-domestication.html">self-domestication</a> arguments try to fill.</p>
 
 <h3>Sources on this page</h3>
-<ul class="lit">
-<li>{src('stibel2021')}</li>
-<li>{src('stibel2023body')}</li>
-<li>{src('will2021')}</li>
-<li>{lit('willstock2016')}</li>
-<li>{lit('ruff1997')}</li>
-<li>{lit('ruff1994')}</li>
-<li>{lit('monson2026')}</li>
-<li>{lit('smaers2021')}</li>
-<li>{lit('deaner2007')}</li>
-</ul>
+{sources(['stibel2021', 'stibel2023body', 'will2021', 'willstock2016', 'ruff1997', 'ruff1994', 'monson2026', 'smaers2021', 'deaner2007'])}
 """
     return write("body-size.html", shell("body-size.html", "Body size and allometry", d, body,
                                          [article_ld("Body size and allometry", d, "body-size.html")]))
@@ -724,22 +650,7 @@ papers acknowledge it omits nearly everything that determines cognitive capacity
 neuronal density, interneuron distance, axonal conduction velocity and cortical scaling.</p>
 
 <h3>Sources on this page</h3>
-<ul class="lit">
-<li>{src('stibel2021')}</li>
-<li>{src('desilva2023')}</li>
-<li>{lit('pietschnig2015')}</li>
-<li>{lit('gignac2017')}</li>
-<li>{lit('nave2019')}</li>
-<li>{lit('logan2018')}</li>
-<li>{lit('deaner2007')}</li>
-<li>{lit('smaers2021')}</li>
-<li>{lit('herculano2009')}</li>
-<li>{lit('neubauer2018')}</li>
-<li>{lit('poncedeleon2021')}</li>
-<li>{lit('pearce2013')}</li>
-<li>{lit('trahan2014')}</li>
-<li>{lit('bratsberg2018')}</li>
-</ul>
+{sources(['stibel2021', 'desilva2023', 'pietschnig2015', 'gignac2017', 'nave2019', 'logan2018', 'deaner2007', 'smaers2021', 'herculano2009', 'neubauer2018', 'poncedeleon2021', 'pearce2013', 'trahan2014', 'bratsberg2018'])}
 """
     return write("cognition.html", shell("cognition.html", "Brain size and cognitive ability", d, body,
                                          [article_ld("Brain size and cognitive ability", d, "cognition.html")]))
@@ -872,31 +783,7 @@ a modern analogy, citing work on offloading to search engines and AI assistants.
 selection pressure on human neuroanatomy.</p></div>
 
 <h3>Sources on this page</h3>
-<ul class="lit">
-<li>{src('stibel2025')}</li>
-<li>{src('desilva2021')}</li>
-<li>{lit('kuzawa2014')}</li>
-<li>{lit('fonseca2012')}</li>
-<li>{lit('aiello1995')}</li>
-<li>{lit('navarrete2011')}</li>
-<li>{lit('pontzer2016')}</li>
-<li>{lit('isler2009')}</li>
-<li>{lit('risko2016')}</li>
-<li>{lit('sparrow2011')}</li>
-<li>{lit('hesselmann2020')}</li>
-<li>{lit('ward2017')}</li>
-<li>{lit('ruizpardo2022')}</li>
-<li>{lit('parry2023')}</li>
-<li>{lit('bottger2023')}</li>
-<li>{lit('grinschgl2021')}</li>
-<li>{lit('storm2015')}</li>
-<li>{lit('muthukrishna2016')}</li>
-<li>{lit('clark1998')}</li>
-<li>{lit('sterelny2010')}</li>
-<li>{lit('malafouris2019')}</li>
-<li>{lit('neubauer2018')}</li>
-<li>{lit('du2018')}</li>
-</ul>
+{sources(['stibel2025', 'desilva2021', 'kuzawa2014', 'fonseca2012', 'aiello1995', 'navarrete2011', 'pontzer2016', 'isler2009', 'risko2016', 'sparrow2011', 'hesselmann2020', 'ward2017', 'ruizpardo2022', 'parry2023', 'bottger2023', 'grinschgl2021', 'storm2015', 'muthukrishna2016', 'clark1998', 'sterelny2010', 'malafouris2019', 'neubauer2018', 'du2018'])}
 """
     return write("cognitive-offloading.html",
                  shell("cognitive-offloading.html", "Cognitive offloading", d, body,
@@ -960,19 +847,7 @@ Neither is established, and both have to contend with the possibility that the r
 is smaller than reported, or absent.</p>
 
 <h3>Sources on this page</h3>
-<ul class="lit">
-<li>{lit('kruska2005')}</li>
-<li>{lit('balcarcel2021')}</li>
-<li>{lit('wilkins2014')}</li>
-<li>{lit('johnsson2021')}</li>
-<li>{lit('wilkins2021reply')}</li>
-<li>{lit('lord2020')}</li>
-<li>{lit('gleeson2023')}</li>
-<li>{lit('cieri2014')}</li>
-<li>{lit('hare2017')}</li>
-<li>{lit('sanchez2019')}</li>
-<li>{lit('leach2003')}</li>
-</ul>
+{sources(['kruska2005', 'balcarcel2021', 'wilkins2014', 'johnsson2021', 'wilkins2021reply', 'lord2020', 'gleeson2023', 'cieri2014', 'hare2017', 'sanchez2019', 'leach2003'])}
 """
     return write("self-domestication.html",
                  shell("self-domestication.html", "Self-domestication", d, body,
@@ -1048,16 +923,7 @@ anomalous.</p>
 <p>Any claim that hominins do or do not follow a size trend has to specify the timescale first.</p>
 
 <h3>Sources on this page</h3>
-<ul class="lit">
-<li>{{lit('willpablos2017')}}</li>
-<li>{{lit('gardner2026')}}</li>
-<li>{{lit('puschel2024')}}</li>
-<li>{{lit('montgomery2010')}}</li>
-<li>{{lit('gingerich2022')}}</li>
-<li>{{lit('du2018')}}</li>
-<li>{{src('stibel2023body')}}</li>
-<li>{{lit('willstock2016')}}</li>
-</ul>
+{sources(['willpablos2017', 'gardner2026', 'puschel2024', 'montgomery2010', 'gingerich2022', 'du2018', 'stibel2023body', 'willstock2016'])}
 """
     return write("copes-rule.html", shell("copes-rule.html", "Cope's rule and the hominin record",
                                           d, body,
@@ -1228,8 +1094,7 @@ def page_papers():
     mech  = "".join(paper_card(k) for k in MECH)
 
     def block(title, keys):
-        return f"<h3>{title}</h3><ul class=\"lit\">" + "".join(
-            f"<li>{lit(k, note=True)}</li>" for k in keys) + "</ul>"
+        return f"<h3>{title}</h3>" + sources(keys, note=True)
 
     body = f"""
 <h1>Sources</h1>
@@ -1245,14 +1110,14 @@ cultural transmission.</p>
 
 <h2>Full bibliography</h2>
 
-{block("Holocene cranial change", ["henneberg1988","hennebergsteyn1993","henneberg1998","beals1984"])}
-{block("Secular change in living populations", ["miller1977","jantz2016","decarli2024"])}
-{block("Climate, latitude and body form", ["ruff1994","ruff1997","katzmarzyk1998","foster2013","wells2012","savell2016"])}
-{block("Brain energetics", ["aiello1995","navarrete2011","fonseca2012","kuzawa2014","pontzer2016","isler2009"])}
-{block("Brain size and cognition", ["pietschnig2015","gignac2017","nave2019","logan2018","deaner2007","smaers2021","herculano2009","trahan2014","bratsberg2018"])}
-{block("Cognitive offloading and distributed cognition", ["risko2016","sparrow2011","hesselmann2020","ward2017","ruizpardo2022","parry2023","bottger2023","grinschgl2021","storm2015","muthukrishna2016","clark1998","sterelny2010","malafouris2019"])}
-{block("Domestication and gracilization", ["kruska2005","wilkins2014","cieri2014","hare2017","sanchez2019","leach2003"])}
-{block("Archaic and Neanderthal comparisons", ["neubauer2018","poncedeleon2021","du2018","pearce2013","monson2026"])}
+{block("Holocene cranial change", ['henneberg1988', 'hennebergsteyn1993', 'henneberg1998', 'beals1984'])}
+{block("Secular change in living populations", ['miller1977', 'jantz2016', 'decarli2024'])}
+{block("Climate, latitude and body form", ['ruff1994', 'ruff1997', 'katzmarzyk1998', 'foster2013', 'wells2012', 'savell2016'])}
+{block("Brain energetics", ['aiello1995', 'navarrete2011', 'fonseca2012', 'kuzawa2014', 'pontzer2016', 'isler2009'])}
+{block("Brain size and cognition", ['pietschnig2015', 'gignac2017', 'nave2019', 'logan2018', 'deaner2007', 'smaers2021', 'herculano2009', 'trahan2014', 'bratsberg2018'])}
+{block("Cognitive offloading and distributed cognition", ['risko2016', 'sparrow2011', 'hesselmann2020', 'ward2017', 'ruizpardo2022', 'parry2023', 'bottger2023', 'grinschgl2021', 'storm2015', 'muthukrishna2016', 'clark1998', 'sterelny2010', 'malafouris2019'])}
+{block("Domestication and gracilization", ['kruska2005', 'wilkins2014', 'cieri2014', 'hare2017', 'sanchez2019', 'leach2003'])}
+{block("Archaic and Neanderthal comparisons", ['neubauer2018', 'poncedeleon2021', 'du2018', 'pearce2013', 'monson2026'])}
 
 <h2>Further reading in the popular press</h2>
 

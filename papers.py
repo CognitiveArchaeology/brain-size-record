@@ -7,6 +7,7 @@ Every field here was read off the publisher's own page or PDF during the
 Where a publisher states conflicting values (Karger gives three different
 publication dates for BBE 98(2)), the conflict is recorded rather than resolved.
 """
+import re
 
 PAPERS = {
     # ---------------------------------------------------------------- core five
@@ -807,6 +808,37 @@ def _authors_short(authors):
     if len(names) <= 3:
         return ", ".join(names[:-1]) + " &amp; " + names[-1]
     return names[0] + " et al."
+
+
+def _surname(full):
+    parts = full.split()
+    i = len(parts) - 1
+    while i > 0 and parts[i - 1].lower().rstrip(".") in PARTICLES:
+        i -= 1
+    return " ".join(parts[i:])
+
+
+def _sortkey(key):
+    """Alphabetical by first author surname, then year."""
+    if key in PAPERS:
+        p = PAPERS[key]
+        return (_surname(p["authors"][0]).lower(), int(p["year"]))
+    c = re.sub(r"<[^>]+>", "", LIT[key][0])
+    sur = c.split(",")[0].strip().lower()
+    m = re.search(r"\((\d{4})\)", c)
+    return (sur, int(m.group(1)) if m else 0)
+
+
+def sources(keys, pre="", note=False):
+    """Render a de-duplicated, alphabetised source list."""
+    seen, uniq = set(), []
+    for k in keys:
+        if k not in seen:
+            seen.add(k); uniq.append(k)
+    items = "".join(
+        "<li>%s</li>" % (src(k, pre) if k in PAPERS else lit(k, note))
+        for k in sorted(uniq, key=_sortkey))
+    return '<ul class="lit">%s</ul>' % items
 
 
 def src(key, pre=""):
