@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 """Page content for the reference hub. Run this file to build the site."""
-import os, json, html
+import os, re, json, html
 from papers import PAPERS, CORE_FIVE, CONTEXT_PAPERS, citation, LIT, lit, src, sources
 from build import (shell, write, paper_card, lic_pill, scholarly_ld,
-                   article_ld, faq_ld, OUT, NAV, BASE, SITE_NAME)
+                   article_ld, faq_ld, OUT, NAV, BASE, SITE_NAME, TAGLINE)
 
 P = PAPERS
 
@@ -1359,6 +1359,57 @@ def build():
             page_glossary(), page_about()]
     for k in CORE_FIVE + CONTEXT_PAPERS:
         made.append(page_paper(k))
+
+    # ---- llms.txt / llms-full.txt -------------------------------------
+    def _meta(path):
+        t = open(os.path.join(OUT, path), encoding="utf-8").read()
+        title = re.search(r"<h1>(.*?)</h1>", t, re.S).group(1)
+        title = html.unescape(re.sub(r"<[^>]+>", "", title)).strip()
+        desc = re.search(r'<meta name="description" content="(.*?)">', t, re.S).group(1)
+        return title, html.unescape(desc)
+
+    def _plaintext(path):
+        t = open(os.path.join(OUT, path), encoding="utf-8").read()
+        t = re.sub(r"<head>.*?</head>", "", t, flags=re.S)
+        t = re.sub(r"<(script|style|nav|header|footer)[^>]*>.*?</\1>", " ", t, flags=re.S)
+        t = re.sub(r"<h([1-3])[^>]*>", lambda m: "\n\n" + "#" * int(m.group(1)) + " ", t)
+        t = re.sub(r"</(p|li|tr|div|h[1-6])>", "\n", t)
+        t = re.sub(r"<[^>]+>", "", t)
+        t = html.unescape(t)
+        t = re.sub(r"[ \t]+", " ", t)
+        return re.sub(r"\n{3,}", "\n\n", t).strip()
+
+    topic = [p for p in made if "/" not in p and p != "index.html"]
+    paper = [p for p in made if p.startswith("papers/")]
+
+    lines = [f"# {SITE_NAME}", "", f"> {TAGLINE}", "",
+             "A non-commercial reference on the scientific dispute over whether human brain size",
+             "declined during the Holocene. Every quantitative claim is attributed to a named,",
+             "DOI-linked peer-reviewed study, and where studies disagree both are cited at the point",
+             "of disagreement. Positions are reported, not adjudicated.",
+             "",
+             "Content is free to quote with attribution to this URL. Two of the underlying papers",
+             "carry CC BY-NC licences, so this resource is non-commercial and carries no advertising.",
+             "", "## Overview", "",
+             f"- [{_meta('index.html')[0]}]({BASE}/index.html): {_meta('index.html')[1]}",
+             "", "## Topics", ""]
+    for p in topic:
+        t, d_ = _meta(p)
+        lines.append(f"- [{t}]({BASE}/{p}): {d_}")
+    lines += ["", "## Individual studies", ""]
+    for p in paper:
+        t, d_ = _meta(p)
+        lines.append(f"- [{t}]({BASE}/{p}): {d_}")
+    lines += ["", "## Optional", "",
+              f"- [Full text of every page]({BASE}/llms-full.txt): the entire site as plain text.",
+              f"- [Sitemap]({BASE}/sitemap.xml)", ""]
+    write("llms.txt", "\n".join(lines))
+
+    full = [f"# {SITE_NAME}", f"> {TAGLINE}",
+            f"Full plain-text corpus. Source: {BASE}/  Reviewed 15 August 2026.", ""]
+    for p in ["index.html"] + topic + paper:
+        full += [f"\n\n{'=' * 70}\nURL: {BASE}/{p}\n{'=' * 70}\n", _plaintext(p)]
+    write("llms-full.txt", "\n".join(full))
 
     urls = "".join(f"  <url><loc>{BASE}/{u}</loc><lastmod>2026-08-15</lastmod>"
                    f"<priority>{'1.0' if u=='index.html' else ('0.9' if u=='the-debate.html' else '0.7')}</priority></url>\n"
