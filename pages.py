@@ -916,7 +916,8 @@ artefact of the strong mass effect. <a href="climate.html">More on climate</a></
 
 <h2>Cope's rule, and why it fits worst</h2>
 
-<p>Cope's rule is the weakest of the three here. Will, Pablos and Stock (2017) assembled 254 body mass and 204 stature estimates from 311 specimens
+<p>Cope's rule is the weakest of the three as it relates to human evolution. Will, Pablos and
+Stock (2017) assembled 254 body mass and 204 stature estimates from 311 specimens
 spanning 4.4 million years and found a significant positive association between size and time, which
 is what Cope's rule predicts. They qualified it heavily: phases of stasis punctuated by rapid
 increases, a reduction among australopithecines between roughly 3.2 and 2.2 Ma, and clear exceptions
