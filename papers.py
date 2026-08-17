@@ -451,7 +451,7 @@ def citation(p):
         names = ", ".join(a[:-1]) + " & " + a[-1]
     else:
         names = a[0] + " et al."
-    bits = [f"{names} ({p['year']}). {p['title']}."]
+    bits = [f"{names} ({yr(p['key'])}). {p['title']}."]
     if p.get("journal"):
         j = f"<em>{p['journal']}</em>"
         if p.get("volume"):
@@ -818,15 +818,37 @@ def _surname(full):
     return " ".join(parts[i:])
 
 
+# Same first author + same year => bibliographic letter suffix.
+# Ordered by publication date, not slug: the BBE climate paper appeared first.
+YEAR_SUFFIX = {"stibel2023climate": "a", "stibel2023body": "b"}
+
+
+def _check_suffixes():
+    """Fail loudly if a new author-year collision appears without a letter."""
+    from collections import defaultdict
+    g = defaultdict(list)
+    for k, v in PAPERS.items():
+        g[(_surname(v["authors"][0]).lower(), v["year"])].append(k)
+    missing = [k for keys in g.values() if len(keys) > 1 for k in keys
+               if k not in YEAR_SUFFIX]
+    if missing:
+        raise ValueError("author-year collision needs a YEAR_SUFFIX entry: %s" % missing)
+
+
+def yr(key):
+    """Year with its disambiguating letter, e.g. '2023a'."""
+    return "%d%s" % (PAPERS[key]["year"], YEAR_SUFFIX.get(key, ""))
+
+
 def _sortkey(key):
     """Alphabetical by first author surname, then year."""
     if key in PAPERS:
         p = PAPERS[key]
-        return (_surname(p["authors"][0]).lower(), int(p["year"]))
+        return (_surname(p["authors"][0]).lower(), int(p["year"]), YEAR_SUFFIX.get(key, ""))
     c = re.sub(r"<[^>]+>", "", LIT[key][0])
     sur = c.split(",")[0].strip().lower()
     m = re.search(r"\((\d{4})\)", c)
-    return (sur, int(m.group(1)) if m else 0)
+    return (sur, int(m.group(1)) if m else 0, "")
 
 
 def sources(keys, pre="", note=False):
@@ -844,7 +866,7 @@ def sources(keys, pre="", note=False):
 def src(key, pre=""):
     """Render a PAPERS entry for an on-page source list, linked to its own page."""
     p = PAPERS[key]
-    out = f'{_authors_short(p["authors"])} ({p["year"]}). '
+    out = f'{_authors_short(p["authors"])} ({yr(key)}). '
     out += f'<a href="{pre}papers/{p["slug"]}.html">{p["title"]}</a>.'
     if p.get("journal"):
         j = f' <em>{p["journal"]}</em>'
@@ -858,3 +880,6 @@ def src(key, pre=""):
     if p.get("doi"):
         out += f' <a href="https://doi.org/{p["doi"]}">doi:{p["doi"]}</a>'
     return out
+
+
+_check_suffixes()

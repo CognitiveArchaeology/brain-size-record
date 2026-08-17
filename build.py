@@ -12,7 +12,7 @@ Design constraints:
     instantly, and gives crawlers nothing to fail on.
 """
 import os, re, json, html, shutil
-from papers import PAPERS, CORE_FIVE, CONTEXT_PAPERS, citation
+from papers import PAPERS, CORE_FIVE, CONTEXT_PAPERS, citation, yr
 
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "site")
 SITE_NAME = "The Human Brain Size Record"
@@ -193,7 +193,7 @@ def paper_card(key, show_role=True):
     role = f'<p class="meta">{p["role"]}</p>' if show_role and p.get("role") else ""
     return f"""<div class="card">
 <h3><a href="papers/{p['slug']}.html">{html.escape(p['title'])}</a></h3>
-<p class="meta">{html.escape(p['author_short'])} ({p['year']}) &middot; <em>{html.escape(p.get('journal',''))}</em></p>
+<p class="meta">{html.escape(p['author_short'])} ({yr(key)}) &middot; <em>{html.escape(p.get('journal',''))}</em></p>
 {role}
 <p>{lic_pill(p)}<span class="pill">{html.escape(p.get('type','')) }</span></p>
 </div>"""

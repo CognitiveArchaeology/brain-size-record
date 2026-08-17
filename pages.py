@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Page content for the reference hub. Run this file to build the site."""
 import os, re, json, html
-from papers import PAPERS, CORE_FIVE, CONTEXT_PAPERS, citation, LIT, lit, src, sources
+from papers import PAPERS, CORE_FIVE, CONTEXT_PAPERS, citation, LIT, lit, src, sources, yr
 from build import (shell, write, paper_card, lic_pill, scholarly_ld,
                    article_ld, faq_ld, OUT, NAV, BASE, SITE_NAME, TAGLINE)
 
@@ -65,7 +65,7 @@ by whom.</td></tr>
 matched body mass series. <a href="papers/{P['stibel2021']['slug']}.html">Stibel (2021)</a> finds the
 change isometric once lean body mass is controlled.</td></tr>
 <tr><td>Is climate the driver?</td>
-<td><a href="papers/{P['stibel2023climate']['slug']}.html">Stibel (2023)</a> finds temperature
+<td><a href="papers/{P['stibel2023climate']['slug']}.html">Stibel (2023a)</a> finds temperature
 predicts both brain and body size. Will et al. (2021) find temperature predicts body size well and
 brain size only weakly and indirectly.</td></tr>
 <tr><td>Is volume the right variable?</td>
@@ -270,7 +270,7 @@ testing.</li>
 <li>The observation predates the dispute by more than three decades and rests on multiple
 independent datasets.</li>
 <li>Independent evidence has since been added on the climate side.
-<a href="papers/{P['stibel2023climate']['slug']}.html">Stibel (2023)</a> tested temperature,
+<a href="papers/{P['stibel2023climate']['slug']}.html">Stibel (2023a)</a> tested temperature,
 humidity and precipitation against cranial capacity in 298 <em>Homo</em> specimens across 50,000
 years and found brain size averaging about 10.7 percent lower in warm periods than cool ones, with
 the response beginning around 15,000 years ago. That is a decline located by a different dataset,
@@ -342,10 +342,10 @@ parallel</td>
 <td>Stibel 2021</td></tr>
 <tr><td>~15 kyr BP</td>
 <td>Climate-linked size response appears to begin, and may persist to the present</td>
-<td>Stibel 2023, climate</td></tr>
+<td>Stibel 2023a</td></tr>
 <tr><td>Holocene (12 kyr BP–now, per this study)</td>
 <td>Mean <strong>1,281.95 ± 141.58 g</strong> (n = 235) versus Pleistocene 1,426.96 ± 139.28 g (n = 63)</td>
-<td>Stibel 2023, climate</td></tr>
+<td>Stibel 2023a</td></tr>
 <tr><td><strong>5,000–3,000 BP</strong></td>
 <td><strong>Disputed.</strong> The window in which a reduction is argued to have occurred, and in which a
 reanalysis finds none</td>
@@ -373,16 +373,17 @@ every prehistoric comparison subtracts from.</p></div>
 
 <div class="note"><span class="lbl">Units differ between rows</span>
 <p>Different rows use different units. Cranial capacity in cubic centimetres and brain mass in grams
-are related but not interchangeable. Stibel (2021, 2023, 2025) converts using Ruff et al.'s (1997) equation,
+are related but not interchangeable. Stibel (2021, 2023a, 2025) converts using Ruff et al.'s (1997) equation,
 brain mass = 1.147 &times; (cranial capacity)<sup>0.976</sup>; DeSilva et al. (2023) average two published
 equations instead. Comparisons across rows drawn from different studies are indicative, not precise.</p></div>
 
 <h2>The shape of the curve matters more than any single number</h2>
-<p>The parts of this timeline are contested very differently. Expansion through the Pleistocene is
-well established and uncontroversial. The plateau at ~300,000 BP is a recent finding from a large
-single-analysis dataset, and Neubauer et al. (2018) reach a compatible result by a different route.
-The Holocene decline is the only part under active dispute, and it is the part that receives
-essentially all public attention.</p>
+<p>Expansion through the Pleistocene is well established and largely uncontroversial. The plateau at
+~300,000 BP is a recent finding from a large single-analysis dataset,
+<a href="papers/{P['stibel2025']['slug']}.html">Stibel (2025)</a>, drawn from 800 cranial capacity
+measurements across the genus, and Neubauer et al. (2018) reach a compatible result by a different
+route. The Holocene decline is still under active investigation and not confirmed in terms of
+magnitude, direction or timing. More data is ultimately going to be necessary.</p>
 
 <h3>Sources on this page</h3>
 {sources(['desilva2023', 'desilva2021', 'villmoare2022', 'stibel2021', 'stibel2023climate', 'stibel2025', 'neubauer2018', 'du2018', 'ruff1997', 'miller1977', 'jantz2016', 'decarli2024'])}
@@ -414,7 +415,7 @@ restudied the question across 418 samples, confirming the association while noti
 grown shallower since Roberts, which they attributed to twentieth-century nutritional change.</p>
 
 <p>Nearly all of that work is drawn from living populations.
-<a href="papers/{P['stibel2023body']['slug']}.html">Stibel (2023)</a> extends it into deep time
+<a href="papers/{P['stibel2023body']['slug']}.html">Stibel (2023b)</a> extends it into deep time
 against the paleoclimate record, and finds the same direction of effect at the same rough magnitude,
 including the specific prediction that climate should act on mass and breadth rather than height.
 The figures are below.</p>
@@ -434,21 +435,19 @@ generally, in a sample of 952 bird and mammal species.</p>
 <p>Three analyses bear directly on this, and they were built differently enough that the places they
 converge are worth as much as the places they do not.</p>
 
-<p><a href="papers/{P['stibel2023body']['slug']}.html">Stibel (2023, <em>Evolutionary Biology</em>)</a>
-tested five paleoclimate records against body size in 247 <em>Homo</em> specimens across 700,000
-years. Body mass averages 66.40 kg in cooler periods against 59.00 kg in warmer ones, a difference
+<p><a href="papers/{P['stibel2023body']['slug']}.html">Stibel (2023b)</a> tested five paleoclimate
+records against body size in 247 <em>Homo</em> specimens across 700,000 years. Body mass averages 66.40 kg in cooler periods against 59.00 kg in warmer ones, a difference
 the paper reports as 11.8 percent, with proportions shifting toward more linear builds in heat.
 Stature alone shows no significant difference.</p>
 
-<p><a href="papers/{P['stibel2023climate']['slug']}.html">Stibel (2023, <em>Brain, Behavior and
-Evolution</em>)</a> ran the equivalent test on cranial capacity in 298 <em>Homo</em> specimens over
-50,000 years. Brain size correlates inversely with temperature at r = &minus;0.362, holding after
+<p><a href="papers/{P['stibel2023climate']['slug']}.html">Stibel (2023a)</a> ran the equivalent test
+on cranial capacity in 298 <em>Homo</em> specimens over 50,000 years. Brain size correlates inversely with temperature at r = &minus;0.362, holding after
 controls for geography, sex and taxon. Cooler-period specimens average 1,426 g against 1,281 g in
 warmer periods, a difference the paper reports as 10.7 percent. The signal appears to begin roughly 15,000 years ago. Humidity is
 a weaker predictor and precipitation is not significant.</p>
 
-<p><a href="papers/{P['will2021']['slug']}.html">Will, Krapp, Stock and Manica (2021)</a>, in
-<em>Nature Communications</em>, tested a wider set of environmental variables across a million years.
+<p><a href="papers/{P['will2021']['slug']}.html">Will et al. (2021)</a> tested a wider set of
+environmental variables across a million years.
 They found temperature a major predictor of body size, consistent with both analyses above. For brain
 size they found net primary productivity and long-term precipitation variability correlated, but
 explaining low amounts of variance, and concluded most environmental variables do not correspond with
@@ -457,8 +456,7 @@ brain size evolution.</p>
 <p>All three agree temperature predicts body size, and the two body size estimates are close. Where
 they part is whether brain size carries an independent climate signal or follows body size down. That
 distinction matters, because Ruff, Trinkaus and Holliday (1997) showed that endocranial trends cannot
-be read without a matched body mass series. Stibel (2023) is explicit that its data can only provide
-correlational support, and that it is unclear whether brain size was selected on directly or drifted
+be read without a matched body mass series. Stibel (2023a) is explicit that its data can only provide correlational support, and that it is unclear whether brain size was selected on directly or drifted
 alongside body size.</p>
 
 <h2>Does current warming shrink brains?</h2>
@@ -469,8 +467,7 @@ populations, not a response an individual body makes to a warm decade.</p>
 
 <p>Two things work against reading it forward. The first is that clothing, shelter and heating
 decouple modern bodies from ambient temperature, which is why Katzmarzyk and Leonard found the
-climate-body slopes had flattened since Roberts measured them, and why Stibel's own body size paper
-argues cultural adaptation muted the morphological response in later periods. The second is that
+climate-body slopes had flattened since Roberts measured them, and why Stibel (2023b) argues cultural adaptation muted the morphological response in later periods. The second is that
 modern cranial dimensions do move on short timescales, as Jantz and Jantz (2016) have documented, but
 through nutrition, disease burden and growth conditions rather than temperature, and the measured
 direction is upward.</p>
@@ -505,9 +502,8 @@ the standard objection to any brain size claim, and it applies to all sides of t
 
 <h2>The isometry result</h2>
 
-<p><a href="papers/{P['stibel2021']['slug']}.html">Stibel (2021)</a> was built around this problem,
-using matched cranial and postcranial remains to compute encephalization directly rather than
-inferring it. The modern sample comes out 17% less encephalized than the <em>H. sapiens</em>
+<p><a href="papers/{P['stibel2021']['slug']}.html">Stibel (2021)</a> addresses this question directly,
+using matched cranial and postcranial remains to compute encephalization rather than inferring it. The modern sample comes out 17% less encephalized than the <em>H. sapiens</em>
 comparison. But controlled for <strong>lean</strong> body mass the change becomes isometric.</p>
 
 <p>The implication is counterintuitive. Much of the apparent decline in modern encephalization may be
@@ -524,7 +520,7 @@ humans generally, and it limits how far the isometry result can be pushed.</p></
 
 <h2>Body shape, not just mass</h2>
 
-<p><a href="papers/{P['stibel2023body']['slug']}.html">Stibel (2023)</a> extends this to proportion
+<p><a href="papers/{P['stibel2023body']['slug']}.html">Stibel (2023b)</a> extends this to proportion
 across 87 specimens. Stature-to-body-mass ratio is 7.09% greater in warmer cycles, rising to 9.89% at
 10,000-year averaging: more linear builds in heat, stockier in cold. Stature itself shows no
 significant difference across temperature cycles.</p>
@@ -677,10 +673,9 @@ tested cause, and the paper says so.</p>
 <h2>Where the argument starts</h2>
 
 <p><a href="papers/{P['stibel2025']['slug']}.html">Stibel (2025)</a>, in <em>Brain and Cognition</em>,
-is the study this page is built on. It assembles 800 cranial capacity measurements across the genus
-<em>Homo</em>, including 690 <em>H. sapiens</em> and 99 individuals across eight paleospecies, and
-asks a different question from the rest of this literature. Not why brains shrank recently, but why
-they stopped growing at all.</p>
+assembles 800 cranial capacity measurements across the genus <em>Homo</em> and asks a different
+question from the rest of this literature. Not why brains shrank recently, but why they stopped
+growing at all.</p>
 
 <p>The answer it finds is that expansion ends around 300,000 years ago. There is no significant growth
 trend after that point (Kruskal-Wallis <em>H</em> = 135.08, <em>p</em> &lt; 0.0001 across bins), and
@@ -862,10 +857,10 @@ def page_copes():
 <h1>Cope's rule and the hominin record</h1>
 
 <div class="answer">
-<p><strong>Partly, for body size. Not at all, for brain size.</strong> Two studies have tested Cope's
-rule against hominin body mass and both conclude the record is partly consistent with it but more
-complicated than a simple trend. No published study frames hominin brain size evolution in Cope's
-rule terms, and this page does not either.</p>
+<p><strong>Contested, for body size. Untested, for brain size.</strong> Three studies have tested
+Cope's rule against hominin body mass. Two find the record partly consistent with it, one finds it
+unsupported, and all three describe a pattern more complicated than a simple trend. No published
+study frames hominin brain size evolution in Cope's rule terms, and this page does not either.</p>
 </div>
 
 <h2>What the rule says</h2>
@@ -889,13 +884,30 @@ across 21 taxa and Bayesian phylogenetic modelling. They find strong evidence fo
 increase in later <em>Homo</em> and moderate support for a general increase across the lineage. A
 correction to this paper was published in August 2026.</p>
 
-<p>Both conclusions land in the same place: the direction is right, the pattern is not a clean trend,
-and the Holocene runs the other way. <a href="body-size.html">More on body size</a></p>
+<p><a href="papers/{P['stibel2023body']['slug']}.html">Stibel (2023b)</a> reaches a different
+conclusion from a dataset built to test climate rather than time. Across 247 <em>Homo</em> specimens
+and 700,000 years, body mass does increase over time (<em>p</em> &lt; 0.0001, ANOVA), but the trend
+is cubic rather than directional, and the paper states plainly that its results "do not support
+Cope's rule" because <em>Homo</em> body size "has not consistently increased over time."</p>
+
+<p>What it offers instead is the more interesting part. Hunt and Roy (2006) proposed a
+<strong>Cope-Bergmann rule</strong>, in which apparent size increase over geological time is really a
+correlated response to time and temperature together rather than a directional trend in its own
+right. Stibel finds support for that reading: models including both time and climate as variables are
+significant at <em>p</em> &lt; 0.0001 across the same 247 specimens. On that account the size
+increase is real but Cope's rule is the wrong explanation for it, because the driver is climate
+rather than any general fitness advantage to being larger.</p>
+
+<p>So the three studies do not agree. Two read the record as broadly Cope-consistent with heavy
+qualification; the third reads the same direction of change as a climate signal wearing Cope's
+clothing. What all three share is that the pattern is not a clean trend, and that the Holocene runs
+the other way. <a href="climate.html">More on climate</a> ·
+<a href="body-size.html">More on body size</a></p>
 
 <h2>Why brain size is not treated this way</h2>
 
-<p>Cope's rule is about body size. The hominin brain literature uses a different framework
-entirely, and asks a different question: whether encephalization accumulated within lineages or
+<p>Cope's rule is about body size, and the three studies above keep it there. The hominin brain
+literature uses a different framework entirely, and asks a different question: whether encephalization accumulated within lineages or
 through the replacement of smaller-brained species by larger-brained ones.</p>
 
 <p>Püschel, Nicholson, Baker, Barton and Venditti (2024) answered that directly. Across 285 specimens
@@ -935,7 +947,7 @@ anomalous.</p>
 def _pl(key, label=None):
     """Inline link to a paper page, for use inside Q&A answers."""
     p = P[key]
-    return f'<a href="papers/{p["slug"]}.html">{label or (p["author_short"] + " (" + str(p["year"]) + ")")}</a>'
+    return f'<a href="papers/{p["slug"]}.html">{label or (p["author_short"] + " (" + yr(key) + ")")}</a>'
 
 
 QAS = [
@@ -1186,7 +1198,7 @@ modern humans are so smart, why are our brains shrinking?</a> Kathleen McAuliffe
 <h2>Licence and access</h2>
 <table>
 <tr><th>Paper</th><th>Licence</th><th>Access</th></tr>
-{"".join(f'<tr><td><a href="papers/{P[k]["slug"]}.html">{P[k]["author_short"]} {P[k]["year"]}</a></td><td>{P[k]["license"]}</td><td>{P[k].get("oa","")}</td></tr>' for k in EXCH + MECH + WIDER)}
+{"".join(f'<tr><td><a href="papers/{P[k]["slug"]}.html">{P[k]["author_short"]} {yr(k)}</a></td><td>{P[k]["license"]}</td><td>{P[k].get("oa","")}</td></tr>' for k in EXCH + MECH + WIDER)}
 </table>
 <p class="meta">Two studies carry CC BY-NC licences, which prohibit commercial reuse. This resource is
 non-commercial and carries no advertising or sponsorship.</p>
@@ -1197,7 +1209,7 @@ non-commercial and carries no advertising or sponsorship.</p>
 
 def page_paper(key):
     p = P[key]
-    d = f"{p['author_short']} ({p['year']}), {p.get('journal','')}. {p.get('role','')}"[:300]
+    d = f"{p['author_short']} ({yr(key)}), {p.get('journal','')}. {p.get('role','')}"[:300]
     find = "".join(f"<li>{f}</li>" for f in p.get("findings", []))
     lim = "".join(f"<li>{l}</li>" for l in p.get("limitations", []))
     abst = f'<h2>Abstract</h2><p>{html.escape(p["abstract"])}</p>' if p.get("abstract") else ""
