@@ -173,7 +173,7 @@ def shell(active, title, desc, body, extra_ld=None, path=None):
 {body}
 </div></main>
 <footer class="site"><div class="wrap">
-<p>Method and source information can be found on the <a href="{pre}papers.html">sources page</a>.</p>
+{'' if active == "papers.html" else '<p>Method and source information can be found on the <a href="%spapers.html">sources page</a>.</p>' % pre}
 <p>Last reviewed 15 August 2026. Corrections are welcome and are listed on the about page.</p>
 </div></footer>
 </body></html>"""

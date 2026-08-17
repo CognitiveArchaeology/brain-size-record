@@ -342,10 +342,10 @@ parallel</td>
 <td>Stibel 2021</td></tr>
 <tr><td>~15 kyr BP</td>
 <td>Climate-linked size response appears to begin, and may persist to the present</td>
-<td>Stibel 2023a</td></tr>
+<td>Stibel 2023, climate</td></tr>
 <tr><td>Holocene (12 kyr BP–now, per this study)</td>
 <td>Mean <strong>1,281.95 ± 141.58 g</strong> (n = 235) versus Pleistocene 1,426.96 ± 139.28 g (n = 63)</td>
-<td>Stibel 2023a</td></tr>
+<td>Stibel 2023, climate</td></tr>
 <tr><td><strong>5,000–3,000 BP</strong></td>
 <td><strong>Disputed.</strong> The window in which a reduction is argued to have occurred, and in which a
 reanalysis finds none</td>
@@ -461,7 +461,7 @@ be read without a matched body mass series. Stibel (2023) is explicit that its d
 correlational support, and that it is unclear whether brain size was selected on directly or drifted
 alongside body size.</p>
 
-<h2>Does current warming shrink brains</h2>
+<h2>Does current warming shrink brains?</h2>
 
 <p>No such claim is established, although several news outlets have conflated the finding in that
 direction. The signal at issue spans hundreds of generations, and it describes selection on
@@ -913,7 +913,7 @@ it.</p>
 <h2>Scale changes the answer</h2>
 
 <p>Two papers show that conclusions about the pace and pattern of hominin brain size change depend on
-how the data are binned. Du and colleagues (2018) demonstrated the effect directly. Gingerich (2022)
+how the data are binned. Du et al. (2018) demonstrated the effect directly. Gingerich (2022)
 synthesised 14 studies into a single endocranial series and recovered four phases: stasis from
 roughly 3.2 to 2.0 Ma, increase from 2.0 to 1.5 Ma, stasis from 1.5 to 0.7 Ma, and increase from
 about 0.7 Ma onward. His median step rate of 0.15 standard deviations per generation is close to
@@ -1014,7 +1014,7 @@ QAS = [
   f"<em>H. sapiens</em> comparison. Bodies have grown faster than brains: mean BMI in that sample is "
   f"25.3, and the brain-to-body relationship that holds across earlier groups (r = 0.66 for "
   f"Plio-Pleistocene hominins, 0.82 for the Late Pleistocene) collapses to r = 0.08 in modern humans. "
-  f"So brains are getting bigger on an absolute basis while organs adapt to larger bodies, not "
+  f"So brains are getting bigger in absolute terms while bodies grow faster still, not bigger "
   f"relative to those bodies. This is also a secular trend of the same kind that raised average "
   f"height, driven by nutrition, reduced childhood disease and better prenatal health, which makes it "
   f"developmental plasticity rather than evolutionary change.</p>"),
@@ -1075,9 +1075,17 @@ def page_questions():
     d = ("Direct answers to eighteen common questions about human brain size, evolution, climate and "
          "cognition, each sourced to the primary literature.")
     qa_html = "".join(f'<div class="qa"><h3>{html.escape(q)}</h3>{a}</div>' for q, a in QAS)
+    keys = ["desilva2021", "villmoare2022", "desilva2023", "decaro2024", "stibel2021",
+            "stibel2023climate", "stibel2023body", "stibel2025", "will2021",
+            "henneberg1988", "hennebergsteyn1993", "ruff1997", "neubauer2018",
+            "pietschnig2015", "gignac2017", "nave2019", "trahan2014", "bratsberg2018",
+            "pearce2013", "risko2016", "cieri2014", "katzmarzyk1998",
+            "miller1977", "jantz2016", "decarli2024"]
     body = f"""
 <h1>Questions and answers</h1>
 {qa_html}
+<h3>Sources on this page</h3>
+{sources(keys)}
 """
     return write("questions.html", shell("questions.html", "Questions and answers", d, body,
                                          [article_ld("Questions and answers", d, "questions.html"), faq_ld(QAS)]))

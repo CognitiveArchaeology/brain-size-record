@@ -47,7 +47,7 @@ PAPERS = {
             "Pleistocene <em>H. sapiens</em> brains average <strong>1,458 ± 140 cc</strong> (n = 136) — effectively identical to Würm-period Neanderthals at 1,459 ± 182 cc (n = 14).",
             "The Pleistocene–Holocene difference in cranial capacity is statistically significant (Welch's <em>t</em> = 9.15, <em>p</em> &lt; 0.0001), as is the decrease after 3 ka (<em>t</em> = 12.81, <em>p</em> &lt; 0.0001).",
             "Estimated reduction after 3,000 years: <strong>159 cc</strong> using the authors' modern estimate, or <strong>117 cc</strong> using Beals et al. (1984) — described in text as a 100–150 cc reduction.",
-            "The result holds across three independent modern reference datasets (Dekaban &amp; Sadowsky n = 3,399, <em>t</em> = 9.83; Beals et al. n = 5,288, <em>t</em> = 9.04; both <em>p</em> &lt; 0.0001).",
+            "The result holds when the authors' own sample is tested against two independent modern reference datasets (Dekaban &amp; Sadowsky n = 3,399, <em>t</em> = 9.83; Beals et al. n = 5,288, <em>t</em> = 9.04; both <em>p</em> &lt; 0.0001).",
             "Framed as effect size: human brain volume has decreased by roughly <strong>one standard deviation</strong> in the last 10,000 years, whether examined locally or globally.",
         ],
         "limitations": [
@@ -249,7 +249,7 @@ PAPERS = {
             "adaptations, buffered later Homo populations against the ecological and physiological "
             "costs associated with large brains."),
         "findings": [
-            "Sample: <strong>800 cranial capacity measurements</strong> across the genus <em>Homo</em>, including 690 <em>H. sapiens</em> and 99 individuals across eight paleospecies.",
+            "Sample: <strong>800 cranial capacity measurements</strong> across the genus <em>Homo</em>. The paper reports 690 <em>H. sapiens</em> and 99 individuals across eight paleospecies; these subgroup figures do not sum to the stated total.",
             "Brain size growth shows <strong>no significant trend after roughly 300,000 years ago</strong> — the expansion plateaus (Kruskal–Wallis <em>H</em> = 135.08, <em>p</em> &lt; 0.0001 across bins).",
             "Glacial–interglacial differences appear <strong>only in the last 100,000 years</strong> (<em>p</em> &lt; 0.0001); there is no such difference between 100–300 kyr BP (<em>p</em> = 0.923).",
             "Factorial ANOVA finds significant effects of time (<em>F</em> = 208.22), climate stage (<em>F</em> = 44.73), and their interaction (<em>F</em> = 5.17), all <em>p</em> &lt; 0.0001.",
