@@ -16,8 +16,8 @@ from papers import PAPERS, CORE_FIVE, CONTEXT_PAPERS, citation
 
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "site")
 SITE_NAME = "The Human Brain Size Record"
-TAGLINE = ("A sourced reference on what is known, disputed, and unresolved about evolutionary "
-           "changes in human brain size.")
+TAGLINE = ("A reference on what is known, disputed, and unresolved about evolutionary changes in "
+           "human brain size.")
 # Origin for canonical URLs and the sitemap. Set by the GitHub Pages workflow
 # at build time; falls back to a placeholder for local builds.
 BASE = os.environ.get("SITE_BASE", "https://example.org").rstrip("/")
@@ -171,7 +171,7 @@ def shell(active, title, desc, body, extra_ld=None, path=None):
 {body}
 </div></main>
 <footer class="site"><div class="wrap">
-<p>Method and source information can be found on the <a href="{pre}about.html">about page</a>.</p>
+<p>Method and source information can be found on the <a href="{pre}papers.html">sources page</a>.</p>
 <p>Last reviewed 15 August 2026. Corrections are welcome and are listed on the about page.</p>
 </div></footer>
 </body></html>"""

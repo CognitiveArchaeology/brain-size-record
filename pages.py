@@ -1141,12 +1141,6 @@ def page_papers():
     body = f"""
 <h1>Sources</h1>
 
-<div class="answer">
-<p>Roughly sixty peer-reviewed studies underpin this resource. The ones with their own pages are
-listed first; the rest are grouped by the question they bear on. Preprints and unrefereed material
-are excluded except where noted.</p>
-</div>
-
 <h2>The Holocene dispute</h2>
 <p>Four papers published in <em>Frontiers in Ecology and Evolution</em> between 2021 and 2024.</p>
 {exch}
